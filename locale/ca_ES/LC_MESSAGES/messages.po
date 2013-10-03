@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013 Give Cat
+# This file is distributed under the same license as the Give Cat package.
+# Matt Rayner <matt@mattrayner.co.uk>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-03 22:30+0100\n"
+"PO-Revision-Date: 2013-10-03 22:36+0100\n"
+"Last-Translator: Matt Rayner <matt@mattrayner.co.uk>\n"
+"Language-Team: Catalan GOOGLE TRANSLATE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: index.php:21
+msgid "Give Cats! Make your internet warm and fuzzy!"
+msgstr "Give Cats! Fes que el teu internet càlida i difusa!"
+
+#: index.php:32 index.php:43
+msgid "Meow!"
+msgstr "Meow!"
+
+#: index.php:33
+msgid ""
+"Turn a boring news site into the cutest place on earth. Hide your friend's "
+"ugly face with something squishy."
+msgstr ""
+"Al seu torn un lloc de notícies avorrit en el lloc més bonic a la terra. Amaga lleig "
+"rostre del seu amic amb una mica tou."
+
+#: index.php:34
+msgid ""
+"Drag this button on to your bookmark bar and click it for insta-cute on any "
+"website."
+msgstr ""
+"Arrossegueu aquest botó a la teva barra de marcadors i feu clic en ell per la instal-valent "
+"en qualsevol lloc web.Dóna-li gats!"
+
+#: index.php:36
+msgid "Give Cats!"
+msgstr "Give Cats!"
+
+#: index.php:44
+msgid ""
+"Thanks for coming! At the moment you need to use a computer or a tablet to "
+"use us (that's changing)."
+msgstr ""
+"Gràcies per venir! En aquests moments és necessari utilitzar un ordinador o una tauleta"
+"usar-nos (això està canviant)."
+
+#: index.php:45
+msgid ""
+"Soon there'll be an iPhone app with all sorts of squishy goodies but until "
+"then, come back on something bigger :)"
+msgstr ""
+"Aviat hi haurà una aplicació per l'iPhone amb tot tipus de llaminadures toves, però fins "
+"llavors, torna en alguna cosa més gran :)"
+
+#: index.php:50
+msgid "Parla catal&#133;?"
+msgstr "Seak english?"
