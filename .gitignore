@@ -1,3 +1,5 @@
 /locale/es_ES/.DS_Store
 /locale/.DS_Store
 /.DS_Store
+.DS_Store
+/includes/config.inc.php
