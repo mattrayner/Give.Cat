@@ -9,41 +9,34 @@
 /**
  * Cat object - orientation and url of cat
  **/
-function Cat(orientation,imageurl){
+function Cat(orientation,imageid){
 	this.orientation=orientation;
-	this.imageurl=imageurl
+	this.imageurl="//give.cat/api/img/"+imageid+".jpg";
 }
 
 /**
  * Object used to filter our cats into the appropriate size.
  **/
 var giveCat = {
-					init:function(myCats){
-												//Set our cats
-												this.myCats=myCats
-											},
-					landscape:function(){
-										  return this.myCats.filter(
-										  								function(myCats){
-										  													return myCats.orientation === "landscape"
-										  								}
-										  							   )
-										  },
-					portrait:function(){
-										return this.myCats.filter(
-																		function(myCats){
-																							return myCats.orientation === "portrait"
-																		}
-																	)
-										},
-					square:function(){
-										return this.myCats.filter(
-																		function(myCats){
-																							return myCats.orientation === "square"
-																						   }
-																	)
-									}
-				};
+	init:function(myCats){
+		//Set our cats
+		this.myCats=myCats
+	},
+	landscape:function(){
+		return this.myCats.filter(function(myCats){
+									return myCats.orientation === "landscape"
+								})
+	},
+	portrait:function(){
+		return this.myCats.filter(function(myCats){
+									return myCats.orientation === "portrait"
+								})
+	},
+	square:function(){
+		return this.myCats.filter(function(myCats){
+									return myCats.orientation === "square"
+								})
+	}};
 
 /**
  * Choose a random image from within our array
@@ -55,32 +48,32 @@ function Randomize(images){
 /**
  * Our array of cats along with their orientations
  **/
-var myCats = [new Cat("landscape","//give.cat/assets/img/aww/l1.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l2.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l3.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l4.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l5.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l6.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l7.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l8.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l9.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l10.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l11.jpg"),
-				 new Cat("landscape","//give.cat/assets/img/aww/l12.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p1.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p2.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p3.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p4.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p5.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p6.jpg"),
-				 new Cat("portrait","//give.cat/assets/img/aww/p7.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s1.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s2.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s3.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s4.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s5.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s6.jpg"),
-				 new Cat("square","//give.cat/assets/img/aww/s7.jpg")];
+var myCats = [new Cat("landscape",1),
+				 new Cat("landscape",2),
+				 new Cat("landscape",3),
+				 new Cat("landscape",4),
+				 new Cat("landscape",5),
+				 new Cat("landscape",6),
+				 new Cat("landscape",7),
+				 new Cat("landscape",8),
+				 new Cat("landscape",9),
+				 new Cat("landscape",10),
+				 new Cat("landscape",11),
+				 new Cat("portrait",12),
+				 new Cat("portrait",13),
+				 new Cat("portrait",14),
+				 new Cat("portrait",15),
+				 new Cat("portrait",16),
+				 new Cat("portrait",17),
+				 new Cat("portrait",18),
+				 new Cat("square",19),
+				 new Cat("square",20),
+				 new Cat("square",21),
+				 new Cat("square",22),
+				 new Cat("square",23),
+				 new Cat("square",24),
+				 new Cat("square",25),
+				 new Cat("landscape",26)];
 
 /**
  * Calculate the orientation of any given image
