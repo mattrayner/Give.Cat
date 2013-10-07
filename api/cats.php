@@ -67,7 +67,7 @@ for($i = 0; $i < count($keys); $i++){
 $json .= "}}";
 
 //Echo out what we have
-outputCatsJSON($json);
+outputCatsJSON($json, true);
 
 // open the cache file for writing
 $fp = fopen($cachefile, 'w');
@@ -81,31 +81,25 @@ fclose($fp);
 // Wipe the output buffer
 ob_clean();
 
-outputCatsJSON($json);
+outputCatsJSON($json, false);
 
 /**
  * Output our cats JSON to the browser!
  **/
-function outputCatsJSON($json){
+function outputCatsJSON($json, $justJSON){
 	//JSON if no callback is set
-	if( ! isset($_GET['callback'])) {
+	if( !isset($_GET['callback']) || $justJSON) {
 		//Make sure the JSON is set or output the cache file
 		if(isset($json) && $json != NULL){echo($json);}else{include("cache/cats.json");}
 	}else{
-		//JSONP if a valid callback is set
-		if(is_valid_callback($_GET['callback'])){
-			//Echo out our JSONP
-			echo("{$_GET['callback']}(");
+		//Echo out our JSONP
+		echo("{$_GET['callback']}(");
 
-			//Make sure the JSON is set or output the cache file
-			if(isset($json) && $json != NULL){echo($json);}else{include("cache/cats.json");}
+		//Make sure the JSON is set or output the cache file
+		if(isset($json) && $json != NULL){echo($json);}else{include("cache/cats.json");}
 
-			//Echo the last bit of the JSONP string
-			echo(")");
-		} else {
-			//There is an invalid JSONP request - fail out
-			header('status: 400 Bad Request', true, 400);
-		}
+		//Echo the last bit of the JSONP string
+		echo(")");
 	}
 }
 ?>
