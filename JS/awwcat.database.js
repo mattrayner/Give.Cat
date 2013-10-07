@@ -24,17 +24,17 @@ var giveCat = {
 	},
 	landscape:function(){
 		return this.myCats.filter(function(myCats){
-									return myCats.orientation === "landscape"
+									return myCats.orientation === "hor"
 								})
 	},
 	portrait:function(){
 		return this.myCats.filter(function(myCats){
-									return myCats.orientation === "portrait"
+									return myCats.orientation === "ver"
 								})
 	},
 	square:function(){
 		return this.myCats.filter(function(myCats){
-									return myCats.orientation === "square"
+									return myCats.orientation === "squ"
 								})
 	}};
 
@@ -46,34 +46,34 @@ function Randomize(images){
 }
 
 /**
- * Our array of cats along with their orientations
+ * Our array of cats along with their orientations (this is a fallback when AJAX fails
  **/
-var myCats = [new Cat("landscape",1),
-				 new Cat("landscape",2),
-				 new Cat("landscape",3),
-				 new Cat("landscape",4),
-				 new Cat("landscape",5),
-				 new Cat("landscape",6),
-				 new Cat("landscape",7),
-				 new Cat("landscape",8),
-				 new Cat("landscape",9),
-				 new Cat("landscape",10),
-				 new Cat("landscape",11),
-				 new Cat("portrait",12),
-				 new Cat("portrait",13),
-				 new Cat("portrait",14),
-				 new Cat("portrait",15),
-				 new Cat("portrait",16),
-				 new Cat("portrait",17),
-				 new Cat("portrait",18),
-				 new Cat("square",19),
-				 new Cat("square",20),
-				 new Cat("square",21),
-				 new Cat("square",22),
-				 new Cat("square",23),
-				 new Cat("square",24),
-				 new Cat("square",25),
-				 new Cat("landscape",26)];
+var myCats = [new Cat("hor",1),
+				 new Cat("hor",2),
+				 new Cat("hor",3),
+				 new Cat("hor",4),
+				 new Cat("hor",5),
+				 new Cat("hor",6),
+				 new Cat("hor",7),
+				 new Cat("hor",8),
+				 new Cat("hor",9),
+				 new Cat("hor",10),
+				 new Cat("hor",11),
+				 new Cat("ver",12),
+				 new Cat("ver",13),
+				 new Cat("ver",14),
+				 new Cat("ver",15),
+				 new Cat("ver",16),
+				 new Cat("ver",17),
+				 new Cat("ver",18),
+				 new Cat("squ",19),
+				 new Cat("squ",20),
+				 new Cat("squ",21),
+				 new Cat("squ",22),
+				 new Cat("squ",23),
+				 new Cat("squ",24),
+				 new Cat("squ",25),
+				 new Cat("hor",26)];
 
 /**
  * Calculate the orientation of any given image
@@ -86,12 +86,62 @@ function imageOrientation(image){
 	else if(proportion<1)return"landscape"
 }
 
+var tempCatScript = null, catAttempts;
+
 /**
- * Create a self executing function that kicks this all off
+ * Begin the process of grabbing our cats from the server
+ * - Technically we're injecting the script into the browser
  **/
-(function(document){
-	giveCat.init(myCats);
+function grabCats(isRetry){
+	if(tempCatScript){ console.log("alreadyTrying"); return; }//are we already trying?
+	if(!isRetry){
+		catAttempts = 0;
+	}if(isRetry && catAttempts > 5){ randomizeCats(); return; }
 	
+	tempCatScript = document.createElement("script");
+    tempCatScript.type = "text/javascript";
+    tempCatScript.id = "tempscript";
+    tempCatScript.src = "//give.cat/api/cats.php?callback=catsBeGot&requestid="
+    	+ Math.floor(Math.random()*999999).toString();	
+    		
+    console.log("about to call");
+    		
+    catAttempts++;
+    
+    document.body.appendChild(tempCatScript);
+    // catsBeGot invoked when finished
+}
+
+/**
+ * We've got some cats!
+ **/
+function catsBeGot(data) {
+	document.body.removeChild(tempCatScript);
+	tempCatScript = null;
+	
+	console.log(data.generated);
+	console.log(data.cats);
+	
+	var tempCats = new Array();
+	for (var key in data.cats)
+	{
+		tempCats[tempCats.length] = new Cat(data.cats[key], key);
+		console.log("ID: " + key + " -  Orientation: " + data.cats[key]);
+	}
+	
+	if(tempCats.length > 0) myCats = tempCats;
+	else	
+		grabCats(true);
+	
+	randomizeCats();
+}
+
+/**
+ *
+ **/
+function randomizeCats() {
+	giveCat.init(myCats);
+
 	var images=document.getElementsByTagName("img"),
 		length=images.length;
 		
@@ -116,9 +166,19 @@ function imageOrientation(image){
 			var number=Randomize(giveCat.portrait());
 			var img=giveCat.portrait()[number];
 			
-			images[i].src=img.imageurl
+			images[i].src=img.imageurl;
 		}
 	}
-	
-	console.log("yay")
+}
+
+/**
+ * Create a self executing function that kicks this all off
+ **/
+(function(document){
+	//Do some AJAX to get the JSONP
+	//http://jsbin.com/omujex/10/edit - base it off of this wiki JSBIN
+	grabCats(false);
+
+	//Initialise the giveCat object with our array
+	giveCat.init(myCats);
 })(document);
