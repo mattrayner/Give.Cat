@@ -4,3 +4,5 @@
 .DS_Store
 /includes/config.inc.php
 /api/config.inc.php
+/admin/assets/php/config.inc.php
+config.inc.php
