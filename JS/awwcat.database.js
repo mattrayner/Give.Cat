@@ -95,13 +95,13 @@ function catsBeGot(data) {
 	//document.getElementsByTagName('head')[0].removeChild(tempCatScript);
 	//tempCatScript = null;
 	
+	console.log("Response from server:");
 	console.log(data);
 	
 	var tempCats = new Array();
 	for (var key in data.cats)
 	{
 		tempCats[tempCats.length] = new Cat(data.cats[key], key);
-		console.log("ID: " + key + " -  Orientation: " + data.cats[key]);
 	}
 	
 	if(tempCats.length > 0) myCats = tempCats;
@@ -118,12 +118,10 @@ function randomizeCats() {
 	var images=document.getElementsByTagName("img"),
 		length=images.length;
 		
-	console.log(length);
+	console.log("Images found: "+length);
 		
 	for(var i=0;i<length;i++){
 		var orientation=imageOrientation(images[i]);
-		
-		console.log(orientation);
 		
 		if(orientation==="landscape"){
 			var number=Randomize(giveCat.landscape());
@@ -211,5 +209,5 @@ function jsLoader()
  **/
 (function(document){
 	var ol = new jsLoader();
-	ol.require('http://give.cat/api/cats.php?callback=catsBeGot',800,true, function() {console.log("Cats Loaded!");},function() {console.log("Cats blocked by CSP"); randomizeCats();}); 
+	ol.require('http://give.cat/api/cats.php?callback=catsBeGot',800,true, function() {console.log("Content Security Policy = OFF");},function() {console.log("Content Security Policy = ON"); randomizeCats();}); 
 })(document);
