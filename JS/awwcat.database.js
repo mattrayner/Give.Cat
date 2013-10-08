@@ -91,10 +91,7 @@ var tempCatScript = null, catAttempts;
 /**
  * We've got some cats!
  **/
-function catsBeGot(data) {
-	//document.getElementsByTagName('head')[0].removeChild(tempCatScript);
-	//tempCatScript = null;
-	
+function catsBeGot(data) {	
 	console.log("Response from server:");
 	console.log(data);
 	
@@ -155,12 +152,12 @@ function jsLoader()
 	//An unstoppable repeat timer, when t=-1 means endless, when function f() returns true it can be stopped
     o.timer = function(t,i,d,f,fend,b) {
       if( t == -1 || t > 0 ){ setTimeout( function() { b=(f())?1:0; o.timer( (b)?0:(t>0)?--t:t, i+((d)?d:0), d, f, fend,b ); }, (b||i<0)?0.1:i ); }
-      else if( typeof fend == 'function' )
+      else if( typeof fend == "function" )
             { setTimeout( fend, 1 ); }
     };
 
 	o.addEvent = function( el, eventName, eventFunc ){
-		if( typeof el != 'object' )
+		if( typeof el != "object" )
 		{ return false; }
 		
 		if( el.addEventListener )
@@ -180,26 +177,26 @@ function jsLoader()
 
     o.require = function( s, delay, baSync, fCallback, fErr ) // add script to dom
     {
-		tempCatScript = document.createElement('script'),
-		oHead = document.getElementsByTagName('head')[0];
+		tempCatScript = document.createElement("script"),
+		oHead = document.getElementsByTagName("head")[0];
 		if( !oHead )
 		{ return false; }
 
 		setTimeout( function() {
-		var f = (typeof fCallback == 'function')?fCallback:function(){};
-		fErr = (typeof fErr == 'function')?fErr:function(){alert('require: Cannot load resource -'+s);},
-		fe = function(){ if(!tempCatScript.__es){tempCatScript.__es=true; tempCatScript.id='failed'; fErr(tempCatScript);}};
-		tempCatScript.onload = function() {tempCatScript.id='loaded'; f(tempCatScript); };
-		tempCatScript.type = 'text/javascript';
-		tempCatScript.async = (typeof baSync == 'boolean')?baSync:false;
-		tempCatScript.charset='utf-8';
+		var f = (typeof fCallback == "function")?fCallback:function(){};
+		fErr = (typeof fErr == "function")?fErr:function(){alert("require: Cannot load resource -"+s);},
+		fe = function(){ if(!tempCatScript.__es){tempCatScript.__es=true; tempCatScript.id="failed"; fErr(tempCatScript);}};
+		tempCatScript.onload = function() {tempCatScript.id="loaded"; f(tempCatScript); };
+		tempCatScript.type = "text/javascript";
+		tempCatScript.async = (typeof baSync == "boolean")?baSync:false;
+		tempCatScript.charset="utf-8";
 		o.__es = false;
-		o.addEvent( tempCatScript, 'error', fe ); // when supported
+		o.addEvent( tempCatScript, "error", fe ); // when supported
 		// when error event is not supported fall back to timer
-		o.timer( 15, 1000, 0, function() {return (tempCatScript.id == 'loaded');}, function(){ if(tempCatScript.id != 'loaded'){fe();}});
+		o.timer( 15, 1000, 0, function() {return (tempCatScript.id == "loaded");}, function(){ if(tempCatScript.id != "loaded"){fe();}});
 		tempCatScript.src = s;
 		setTimeout( function() { try{ oHead.appendChild(tempCatScript);}catch(e){fe();}},1); 
-		}, (typeof delay == 'number')?delay:1 );  
+		}, (typeof delay == "number")?delay:1 );  
 		return true;
 	};
 }
@@ -209,5 +206,5 @@ function jsLoader()
  **/
 (function(document){
 	var ol = new jsLoader();
-	ol.require('http://give.cat/api/cats.php?callback=catsBeGot',800,true, function() {console.log("Content Security Policy = OFF");},function() {console.log("Content Security Policy = ON"); randomizeCats();}); 
+	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function() {console.log("Content Security Policy = OFF");},function() {console.log("Content Security Policy = ON"); randomizeCats();}); 
 })(document);
