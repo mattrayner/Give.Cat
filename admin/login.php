@@ -5,7 +5,7 @@ if($_SESSION['loggedin']){
 	header("location: home.php");	
 }
 
-include_once("helperFunctions.php");
+include_once("assets/php/helperFunctions.php");
 
 $databaseconnect = connectToDB("config.inc.php");
 
@@ -26,7 +26,7 @@ if($count>0){
 	$row = $result->fetch_assoc();
 	$hash = $row['hash'];
 
-	include_once("pbkdf2.php");
+	include_once("assets/php/pbkdf2.php");
 							
 	if( validate_password($pw, $hash) ){
 		$_SESSION['loggedin'] = true;
