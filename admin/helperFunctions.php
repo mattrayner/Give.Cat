@@ -37,7 +37,7 @@ class Cat {
      * @var int, string, string
      * @access private
      */
-    private $id,$orientation,$url;
+    public $id,$orientation,$url;
     
     /**
      * Set some values for Cat::properties
@@ -56,12 +56,8 @@ class Cat {
      * 
      * @access public
      */
-    public function printOut() {
-        echo '<div class="clearfix"><div class="span1">'.$this->getID()
-        	.'</div><div class="span3">'.$this->getOrientation()
-        	.'</div><div class="span5"><a href="'.$this->getURL().'" target="_blank">'.$this->getURL()
-        	.'</a></div><div class="span3">'.$this->getThumb()
-        	.'</div></div>';
+    public function printRow() {
+        return '<div class="clearfix"><div class="span1">'.$this->getID().'</div><div class="span3">'.$this->getOrientation().'</div><div class="span5"><a href="'.$this->getURL().'" target="_blank">'.$this->getURL().'</a></div><div class="span3">'.$this->getThumb().'</div></div>';
     }
     
     /**
