@@ -9,30 +9,6 @@ include_once("helperFunctions.php");
 
 $databaseconnect = connectToDB("config.inc.php");
 
-if( isset($_POST['submit']) ) {
-	include('SimpleImage.php');
-	$image = new SimpleImage();
-	$image->load($_FILES['uploaded_image']['tmp_name']);
-	
-	/*$proportion = $image->getHeight()/$image->getWidth();
-	
-	if($proportion>1)$orientation="portrait";
-	else if($proportion===1)$orientation="square";
-	else if($proportion<1)$orientation="landscape";
-	
-	if($orientation == "portrait"){
-		$image->resizeToHeight(150);
-	}else{
-		$image->resizeToWidth(150);
-	}*/
-	
-	include_once("helperFunctions.php");
-	
-	$result = $databaseconnect->query("INSERT `orientation`, `url` INTO `cats` VALUES('".."', '".."')")
-
-}
-
-
 $result = $databaseconnect->query("SELECT * FROM `cats` ORDER BY  `cats`.`id` DESC");
 
 $num_rows = $result->num_rows;
@@ -114,6 +90,25 @@ if($num_rows <= 0){
 		</div>
 		
 		<!-- Main component for a primary marketing message or call to action -->
+		<?php 
+		if(isset($_GET['e'])){
+			switch($content){
+				case 0: $content = "<b>Error uploading file:</b> ".$_GET['message'].".";
+						break;
+				case 1: $content = "<b>Error INSERTING</b> - didn't work.";
+				        break;
+				case 2: $content = "<b>Error moving file</b> - uploaded image was not moved successfully :S.";
+						break;
+			};
+			
+			echo('<div class="alert alert-danger">'.$content.'</div>');
+		}
+		
+		if(isset($_GET['s']) && $_GET['s'] == 1){
+			$content = "<b>Yaaay!</b> - Image successfully uploaded.";
+			
+			echo('<div class="alert alert-success">'.$content.'</div>');
+		} ?>
 		<div class="jumbotron container">
 			<div class="col-md-6">
 				<h1>Manage cats!</h1>
@@ -121,11 +116,11 @@ if($num_rows <= 0){
 			</div>
 			<div class="col-md-6">
 				<div class="well"><!-- Image upload form -->
-					<form role="form">
+					<form action="upload_file.php" method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="imageUpload">Cat file</label>
+							<label for="file">Cat file</label>
 							<p class="help-block">Upload a cat image (preferably with the largest side 374px)!</p>
-							<input type="file" id="imageUpload" name="uploaded_image">
+							<input type="file" name="file" id="file">
 						</div>
 						<button type="submit" class="btn btn-default">Upload</button>
 						
