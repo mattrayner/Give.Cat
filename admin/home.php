@@ -9,6 +9,30 @@ include_once("helperFunctions.php");
 
 $databaseconnect = connectToDB("config.inc.php");
 
+if( isset($_POST['submit']) ) {
+	include('SimpleImage.php');
+	$image = new SimpleImage();
+	$image->load($_FILES['uploaded_image']['tmp_name']);
+	
+	/*$proportion = $image->getHeight()/$image->getWidth();
+	
+	if($proportion>1)$orientation="portrait";
+	else if($proportion===1)$orientation="square";
+	else if($proportion<1)$orientation="landscape";
+	
+	if($orientation == "portrait"){
+		$image->resizeToHeight(150);
+	}else{
+		$image->resizeToWidth(150);
+	}*/
+	
+	include_once("helperFunctions.php");
+	
+	$result = $databaseconnect->query("INSERT `orientation`, `url` INTO `cats` VALUES('".."', '".."')")
+
+}
+
+
 $result = $databaseconnect->query("SELECT * FROM `cats` ORDER BY  `cats`.`id` DESC");
 
 $num_rows = $result->num_rows;
@@ -101,7 +125,7 @@ if($num_rows <= 0){
 						<div class="form-group">
 							<label for="imageUpload">Cat file</label>
 							<p class="help-block">Upload a cat image (preferably with the largest side 374px)!</p>
-							<input type="file" id="imageUpload">
+							<input type="file" id="imageUpload" name="uploaded_image">
 						</div>
 						<button type="submit" class="btn btn-default">Upload</button>
 						

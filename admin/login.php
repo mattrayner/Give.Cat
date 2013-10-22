@@ -13,32 +13,44 @@ $databaseconnect = connectToDB("config.inc.php");
 $un = $_POST['un'];
 $pw = $_POST['pw'];
 
-$sql = "SELECT  `id`, `username` ,  `hash` FROM  `users` WHERE  `username` =  '{$un}'";
+if ($stmt = $databaseconnect->prepare("SELECT  `id`,`username`,`hash` FROM  `users` WHERE  `username`=?")) {
 
-//Qery the server
-$result = $databaseconnect->query($sql);
+    /* bind parameters for markers */
+    $stmt->bind_param("s", $un);
 
-//Count table row
-$count = $result->num_rows;
+    /* execute query */
+    $stmt->execute();
+    
+    /* bind result variables */
+	$stmt->bind_result($id, $username, $hash);
 
-//the match must mean that the correct un is on row one
-if($count>0){
-	$row = $result->fetch_assoc();
-	$hash = $row['hash'];
-
-	include_once("pbkdf2.php");
+/*  //Count table row
+	$count = $stmt->num_rows;
+	
+	//the match must mean that the correct un is on row one
+	if($count>0){
+	    /* fetch value */
+	    $stmt->fetch();
+	    
+	    include_once("pbkdf2.php");
 							
-	if( validate_password($pw, $hash) ){
-		$_SESSION['loggedin'] = true;
-		$_SESSION['username'] = $row['username'];
-		$_SESSION['userID'] = $row['id'];
-		$location = "home.php";
-	} else {
-		$location = "index.php?e=0";
-	}
-} else {
-	$location = "index.php?e=1";			
+		if( validate_password($pw, $hash) ){
+			$_SESSION['loggedin'] = true;
+			$_SESSION['username'] = $username;
+			$_SESSION['userID'] = $id;
+			$location = "home.php";
+		} else {
+			$location = "index.php?e=0";
+		}
+		
+	    /* close statement */
+	    $stmt->close();
+    /*}else{
+	    $location = "index.php?e=1";
+    }*/
+}else{
+	$location = "index.php?e=2";
 }
 
-//header("location: ".$location);
+header("location: ".$location);
 ?>
