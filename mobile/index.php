@@ -6,25 +6,12 @@ $language = 'en_GB';
 
 if(isset($_GET['locale']) && $_GET['locale'] == "ca") $language = "ca_ES";
 
-//Check to see if we have specified a desktop site (mobile override)
-if(!isset($_GET['target']) || $_GET['target'] != "desktop"){
-	require("/lib/mobile.php");
-	
-	$param = "";
-	
-	if(isset($_GET['locale']) && $_GET['locale'] == "ca")
-		$param = "?locale=".$_GET['locale'];
-	
-	reditectToMobile($param);	
-}
-
 $newLocale=setlocale (LC_ALL, $language);
 
 // Set the text domain as 'messages'
 $domain = 'messages';
-bindtextdomain($domain, "./locale");
+bindtextdomain($domain, ".././locale");
 textdomain($domain);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,14 +19,15 @@ textdomain($domain);
     <title><?php echo gettext("Give Cats! Make your internet warm and fuzzy!"); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-	<link href="assets/css/home.css" rel="stylesheet" media="screen">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="../assets/css/home.css" rel="stylesheet" media="screen">
 	
 	<meta property="og:image" content="http://give.cat/assets/img/CatBackground.jpg"/>
   </head>
   <body class="no-background">
   	<div id="wrap" class="container-fluid">
+  		<div class="alert alert-info"><b>Woohoo!</b> <i>You're here on your mobile!</i> Please follow the instructions below to get up and running.</div>
     	<div class="row-fluid">
     		<div class="span6 text-center vertical-center hidden-phone">
     			<h1><?php echo gettext("Meow!"); ?></h1>
@@ -62,7 +50,7 @@ textdomain($domain);
   	</div>
   	<footer id="footer">Copyright &copy;2013 <a href="http://give.cat/">Give.Cat</a>. Created by <a href="http://www.twitter.com/mattrayner" target="_blank>">Matt Rayner</a>, inspired by the genius of <a href="http://heygirl.io/" target="_blank">Hey Girl</a>. <a href="http://give.cat/<?php if(!isset($_GET['locale'])){echo "?locale=ca";} ?>"><?php echo gettext("Parla catal&#133;?"); ?></a> - Fork me on <a href="https://github.com/mattrayner/Give.Cat" target="_blank">GitHub</a>.</footer>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
