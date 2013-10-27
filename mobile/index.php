@@ -27,7 +27,11 @@ textdomain($domain);
   </head>
   <body class="no-background">
   	<div id="wrap" class="container-fluid">
-  		<div class="alert alert-info"><b>Woohoo!</b> <i>You're here on your mobile!</i> Please follow the instructions below to get up and running.</div>
+  		<div class="alert alert-info alert-block visible-desktop">
+  			<button type="button" class="close" data-dismiss="alert">&times;</button>
+  			<?php gettext("<h4>Wait a minute...</h4>
+  			You're on a desktop aren't you? You can stay but we have another bit for you <a href='/'>here</a>."); ?>
+  		</div>
     	<div class="row-fluid">
     		<div class="span6 text-center vertical-center hidden-phone">
     			<h1><?php echo gettext("Meow!"); ?></h1>
@@ -51,6 +55,30 @@ textdomain($domain);
   	<footer id="footer">Copyright &copy;2013 <a href="http://give.cat/">Give.Cat</a>. Created by <a href="http://www.twitter.com/mattrayner" target="_blank>">Matt Rayner</a>, inspired by the genius of <a href="http://heygirl.io/" target="_blank">Hey Girl</a>. <a href="http://give.cat/<?php if(!isset($_GET['locale'])){echo "?locale=ca";} ?>"><?php echo gettext("Parla catal&#133;?"); ?></a> - Fork me on <a href="https://github.com/mattrayner/Give.Cat" target="_blank">GitHub</a>.</footer>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+	    $(document).load(function(){
+		    //Check if a button is clicked
+		    	//Append the contents of a JS file to window.location
+		    	
+		    //Display the bookmark instructions
+		    function displayBookmarkInstructions(){
+			    //Hide first bit and show second
+			    //ARIA enables please
+		    }
+		    	
+		    //Load a test page (with boring photos - maybe dogs)
+		    function displayTestPage(){
+			    //Hide bookmark instructions
+			    //Test the bookmark
+		    }
+		    
+		    //Share me on twitter or FB
+		    function displaySharePage(){
+			    //Hide test page
+			    //Ask to share on twitter and FB
+		    } 
+	    });
+    </script>
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
