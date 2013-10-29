@@ -1,3 +1,18 @@
+html{
+    background: url(introbg.jpg) no-repeat center bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div[role=main] {
+	margin-top:54px;
+}
+
+body{background-color: none; background: url(bg-fade.png) bottom left repeat-x; padding-bottom:20px;}
+.gc-container {background-color: rgba(255,255,255,0.65)}
+
 @font-face{ 
 	font-family:'Glyphicons Halflings';
 		src:url('glyphicons-halflings-regular.eot');
@@ -16,5 +31,7 @@
 
 .navbar-header {text-align:center;}
 .navbar .navbar-text.visible-xs{float:none; font-size: 21px;margin: 10px 0; color: #757575;}
+
+.gc-button-center {margin: 0 auto; float: none; margin-left: 39%; margin-bottom: 20px;}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }.ir br { display: none; }

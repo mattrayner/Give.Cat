@@ -51,7 +51,7 @@
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
-    	<div class="row-fluid">
+    	<div role="content" class="row-fluid">
     		<div id="step1" class="row-fluid">
     			
     		</div>
