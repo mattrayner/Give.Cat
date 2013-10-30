@@ -8,7 +8,7 @@ if(isset($_GET['locale']) && $_GET['locale'] == "ca") $language = "ca_ES";
 
 //Check to see if we have specified a desktop site (mobile override)
 if(!isset($_GET['target']) || $_GET['target'] != "desktop"){
-	require("/lib/mobile.php");
+	require("lib/mobile.php");
 	
 	$param = "";
 	
