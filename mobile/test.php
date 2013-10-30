@@ -1,3 +1,10 @@
+<?php 
+error_reporting(E_ALL); 
+
+require_once("../lib/Mobile_Detect.php");
+
+
+?>
 <!DOCTYPE html>
 <html class="intro">
   <head>
@@ -50,6 +57,9 @@
 		      <p>It's gonna be about 4 steps but wont take long!</p>
 		      <hr>
 		      <a class="btn btn-primary btn-lg gc-button-center" href="#" id="getStartedButton">Get Started!</a>
+		      <a class="btn btn-primary btn-lg gc-button-center" href="#" id="appendButton">Append!</a>
+		      <a class="btn btn-primary btn-lg gc-button-center" href="#" id="getStartedButton">Test Button</a>
+		      <a class="btn btn-primary btn-lg gc-button-center" href="#" id="getStartedButton">Share!</a>
 	      </div>
     	</div>
     	<!-- End content
@@ -63,12 +73,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script>
 	    $(document).load(function(){
-	    	var javascriptString = "<?php 
-	    				$file = file_get_contents('../JS/awwcat.database.production.min.js', FILE_USE_INCLUDE_PATH); 
-						echo $file;
-						?>";
-	    
-			
+	    	
 		    //Check if a button is clicked
 		    	//Append the contents of a JS file to window.location
 		    	
@@ -90,6 +95,20 @@
 			    //Ask to share on twitter and FB
 		    } 
 	    });
+	    
+	    var javascriptString = <?php
+						$file = file_get_contents('../JS/awwcat.database.production.min.js', FILE_USE_INCLUDE_PATH); 
+						echo "'".$file."'";
+						?>;
+	    
+	    var appended = false;
+	    
+			$("#appendButton").click(function(event) {
+				event.preventDefault();
+				if(!appended){
+					window.location.href = window.location.href + "?" + javascriptString;
+				}
+			});
     </script>
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
