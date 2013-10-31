@@ -8,7 +8,7 @@ At the click of a button or the touch of a screen you can turn every image on a 
 
 ### How can I get involved?
 
-I've got a list of enhancements that can be found on the <a href="http://gihub.com/mattrayner/Give.Cat/issues/">issues page</a>, they range form outstanding questions about device compatabilities to bugs and enhancements.
+I've got a list of enhancements that can be found on the <a href="http://github.com/mattrayner/Give.Cat/issues/">issues page</a>, they range form outstanding questions about device compatabilities to bugs and enhancements.
 
 The best way to get involved is just to pull a fork and make some changes! I'm up for any improvements / features you've got.
 
