@@ -1,6 +1,6 @@
 <img src="http://give.cat/assets/img/gc-git-logo.png">
 
-> "Making the internet a squishire place!"
+> "Making the internet a squishier place!"
 
 <i>Give Cat is an attempt to bring happiness and joy to everyday life... One cat at a time.</i>
 
@@ -18,4 +18,5 @@ I've got to give credit for the original idea to <a href="http://heygirl.io">Hey
 
 I use a couple of libraries in here too:
 * <a href="https://github.com/serbanghita/Mobile-Detect/">Mobile Detect - PHP Library</a>
+* <a href="https://gist.github.com/miguelxt/908143">SimpleImage - PHP Library</a>
 * <a href="http://getbootstrap.com/">Twitter Bootstrap</a>

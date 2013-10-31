@@ -20,6 +20,10 @@ var currentCatVersion = parseFloat("0.7");
 //Is CSP turned on? (can we inject scripts)
 var CSPON = false;
 
+var versionBoxOpacity = 0.0;
+
+var initialLoad = !document.contains(document.getElementById("giveCatFaderInfoBox"));
+
 /**
  * Object used to filter our cats into the appropriate size.
  **/
@@ -118,6 +122,8 @@ function randomizeCats() {
 	var images=document.getElementsByTagName("img"),
 		length=images.length;
 		
+	if(initialLoad){injectProgress(length);}
+	
 	for(var i=0;i<length;i++){
 		var orientation=imageOrientation(images[i]);
 		
@@ -141,26 +147,82 @@ function randomizeCats() {
 			images[i].src=img.imageurl;
 		}
 	}
-	
-	if(!CSPON){
-		//Run a check on the current version of Give Cat (if we can)
-		var ol = new jsLoader();
-		ol.require("http://give.cat/api/version.js",800,true, function() {},function() {console.log("CSP on - version failed");}); 
-	}
-	
+
+	//Run a check on the current version of Give Cat (if we can)
+	var ol = new jsLoader();
+	ol.require("http://give.cat/api/version.js",800,true, function() {hideProgressBox();},function() {hideProgressBox();}); 
 }
 
 /**
  * Check the version of GiveCat we have against the server
  **/
 function checkVersion(data){
-	if(data['version'] != null && data['version'] > currentCatVersion){
+	//Don't spam people if they have already seen an upgrade message
+	if(data['version'] != null && data['version'] > currentCatVersion && !document.contains(document.getElementById("giveCatFaderInfoBox"))){
 		//A string to add to our page
-		var domString = '<div style="display:block; width: 80%; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6;><strong>Thanks for using <a href="http://give.cat/" target="_blank" style="color: #468847;">Give Cat</a></strong>. Just to let you know, a new version is available! <a href="http://give.cat/">Check it out/</a>.</div>';
+		var domString = '<div style="display:block; width: 80%; padding-top: 15px; margin: 0 auto; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6; position: fixed; top:5px; left: 50%; margin-left: -40%; z-index: 501; text-align: center;" id="giveCatFaderInfoBox"><span style="width: 28px; height: 28px; display: block; float: left; margin-top:-7px; margin-bottom:7px; margin-left:7px; margin-right: -7px; background: url(http://give.cat/assets/img/catprogressspinner.gif) top left no-repeat;"></span><strong>Thanks for using <a href="http://give.cat/" target="_blank" style="color: #468847;">Give Cat</a></strong>. Just to let you know, a newer version is available! <a href="http://give.cat/">Check it out</a>.</div>';
 		
-		var bodyE = document.getElementsByTagName("body");
+		var bodyE = document.getElementsByTagName("body")[0];
 		bodyE.innerHTML = domString + bodyE.innerHTML;
+		
+		setTimeout(fadeIn("giveCatFaderInfoBox"), 100);
 	}
+}
+
+/**
+ * Inject a progress div showing that we are doing stuff
+ *
+ * @param	int	number of images we are changing
+ **/
+function injectProgress(numberOfImages){
+	var domString = '<div style="display:block; width: 80%; padding-top: 15px; margin: 0 auto; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6; position: fixed; bottom:5px; left: 50%; margin-left: -40%; z-index: 500; text-align: center;" id="giveCatFaderProgressBox"><strong>We\'re currently making '+numberOfImages+' images squishier!</strong> Please wait.<span style="width:80%; height: 10px; display: block; margin: 0 auto; background: url(http://give.cat/assets/img/catprogressbar.gif) top left repeat-x; margin-bottom: 15px;"></span></div>';
+	
+	var bodyE = document.getElementsByTagName("body")[0];
+	bodyE.innerHTML = bodyE.innerHTML + domString;
+}
+
+function hideProgressBox(){
+	initialLoad = false;
+	document.getElementById("giveCatFaderProgressBox").style.display = "none";
+}
+
+/**
+ * 
+ **/
+function fadeIn(elementToFade){
+	console.log('fade in - '+elementToFade);
+	
+    var element = document.getElementById(elementToFade);
+
+    versionBoxOpacity += 0.1;
+    
+    element.style.opacity = versionBoxOpacity;
+    if(versionBoxOpacity > 1.0) {
+        versionBoxOpacity = 1.0;
+        element.style.opacity = versionBoxOpacity;
+        //Wait 5 seconds and hide the message about a new version
+		setTimeout(function(){
+		  fadeOut(elementToFade);
+		}, 6500);
+    } else {
+        setTimeout(function(){fadeIn(elementToFade);}, 10);
+    }
+}
+
+function fadeOut(elementToFade){
+	console.log('fade out - '+elementToFade);
+    var element = document.getElementById(elementToFade);
+
+    versionBoxOpacity -= 0.1;
+    
+    element.style.opacity = versionBoxOpacity;
+    if(versionBoxOpacity < 0.0) {
+        versionBoxOpacity = 0.0;
+        element.style.opacity = versionBoxOpacity;
+        element.style.display = "none";
+    } else {
+        setTimeout(function(){fadeOut(elementToFade);}, 10);
+    }
 }
 
 /**

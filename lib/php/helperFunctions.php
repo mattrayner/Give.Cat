@@ -7,7 +7,7 @@
  * @return	MySQLi	The MySQLi object returned when we ran mysqli_connect
  **/
 function connectToDB(){
-	include_once("config.inc.php");
+	require("config.inc.php");
 	
 	//Connect to the database using the information from our config file.
 	$mysql_connection = mysqli_connect("localhost",$catdatabaseuser,$catdatabasepass,$catdatabasename);
