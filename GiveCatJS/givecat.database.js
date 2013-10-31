@@ -14,6 +14,12 @@ function Cat(orientation,imageid){
 	this.imageurl="http://give.cat/api/img/"+imageid+".jpg";
 }
 
+//What is the current Bookmarklet version?
+var currentCatVersion = parseFloat("0.7");
+
+//Is CSP turned on? (can we inject scripts)
+var CSPON = false;
+
 /**
  * Object used to filter our cats into the appropriate size.
  **/
@@ -92,9 +98,6 @@ var tempCatScript = null, catAttempts;
  * We've got some cats!
  **/
 function catsBeGot(data) {	
-	console.log("Response from server:");
-	console.log(data);
-	
 	var tempCats = new Array();
 	for (var key in data.cats)
 	{
@@ -115,10 +118,11 @@ function randomizeCats() {
 	var images=document.getElementsByTagName("img"),
 		length=images.length;
 		
-	console.log("Images found: "+length);
-		
 	for(var i=0;i<length;i++){
 		var orientation=imageOrientation(images[i]);
+		
+		images[i].width = images[i].clientWidth;
+		images[i].height = images[i].clientHeight;
 		
 		if(orientation==="landscape"){
 			var number=Randomize(giveCat.landscape());
@@ -136,6 +140,26 @@ function randomizeCats() {
 			
 			images[i].src=img.imageurl;
 		}
+	}
+	
+	if(!CSPON){
+		//Run a check on the current version of Give Cat (if we can)
+		var ol = new jsLoader();
+		ol.require("http://give.cat/api/version.js",800,true, function() {},function() {console.log("CSP on - version failed");}); 
+	}
+	
+}
+
+/**
+ * Check the version of GiveCat we have against the server
+ **/
+function checkVersion(data){
+	if(data['version'] != null && data['version'] > currentCatVersion){
+		var domString = '<div style="display:block; width: 80%; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6;><strong>Thanks for using <a href="http://give.cat/" target="_blank" style="color: #468847;">Give Cat</a></strong>. Just to let you know, a new version is available! <a href="http://give.cat/">Check it out/</a>.</div>';
+		
+		var bodyE = document.getElementsByTagName("body");
+		bodyE.innerHTML = domString + bodyE.innerHTML;
+		
 	}
 }
 
@@ -206,5 +230,5 @@ function jsLoader()
  **/
 (function(document){
 	var ol = new jsLoader();
-	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function() {console.log("Content Security Policy = OFF");},function() {console.log("Content Security Policy = ON"); randomizeCats();}); 
+	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function() {},function() {CSPON = true; randomizeCats();}); 
 })(document);

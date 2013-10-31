@@ -5,9 +5,9 @@ if(!$_SESSION['loggedin']){
 	header("location: index.php");	
 }
 
-include_once("helperFunctions.php");
+include_once("../lib/php/helperFunctions.php");
 
-$databaseconnect = connectToDB("config.inc.php");
+$databaseconnect = connectToDB();
 
 $result = $databaseconnect->query("SELECT * FROM `cats` ORDER BY  `cats`.`id` DESC");
 
@@ -35,7 +35,7 @@ if($num_rows <= 0){
     <title>Give Cat admin panel</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/navbar.css" rel="stylesheet">
@@ -190,6 +190,6 @@ if($num_rows <= 0){
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 </body>
 </html>

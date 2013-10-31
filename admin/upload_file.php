@@ -10,9 +10,9 @@ if ($_FILES["file"]["error"] > 0){
   else if($proportion===1)$orientation = "squ";
   else if($proportion<1)$orientation = "hor";
   
-  include_once("helperFunctions.php");
+  include_once("../lib/php/helperFunctions.php");
 
-  $databaseconnect = connectToDB("config.inc.php");
+  $databaseconnect = connectToDB();
 
   if($result = $databaseconnect->query("INSERT INTO `cats` VALUES (NULL, '".$orientation."')")) {
     $newID = $databaseconnect->insert_id;

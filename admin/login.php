@@ -5,9 +5,9 @@ if($_SESSION['loggedin']){
 	header("location: home.php");	
 }
 
-include_once("helperFunctions.php");
+include_once("../lib/php/helperFunctions.php");
 
-$databaseconnect = connectToDB("config.inc.php");
+$databaseconnect = connectToDB();
 
 //Username and pw sent from login form
 $un = $_POST['un'];

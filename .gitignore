@@ -1,9 +1,2 @@
-/locale/es_ES/.DS_Store
-/locale/.DS_Store
-/.DS_Store
-.DS_Store
-/includes/config.inc.php
-/api/config.inc.php
-/admin/assets/php/config.inc.php
-config.inc.php
-/admin/config.inc.php
+lib/php/config.inc.php
+api/img/
