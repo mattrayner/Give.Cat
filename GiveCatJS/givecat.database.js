@@ -155,11 +155,11 @@ function randomizeCats() {
  **/
 function checkVersion(data){
 	if(data['version'] != null && data['version'] > currentCatVersion){
+		//A string to add to our page
 		var domString = '<div style="display:block; width: 80%; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6;><strong>Thanks for using <a href="http://give.cat/" target="_blank" style="color: #468847;">Give Cat</a></strong>. Just to let you know, a new version is available! <a href="http://give.cat/">Check it out/</a>.</div>';
 		
 		var bodyE = document.getElementsByTagName("body");
 		bodyE.innerHTML = domString + bodyE.innerHTML;
-		
 	}
 }
 
