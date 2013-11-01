@@ -14,9 +14,6 @@ function Cat(orientation,imageid){
 	this.imageurl="http://give.cat/api/img/"+imageid+".jpg";
 }
 
-//GLOBAL VARS USED THROUGHOUT
-var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts;
-
 /**
  * Object used to filter our cats into the appropriate size.
  **/
@@ -51,7 +48,7 @@ function Randomize(images){
 /**
  * Our array of cats along with their orientations (this is a fallback when AJAX fails
  **/
-var myCats=[new Cat("hor",1),
+var myCats = [new Cat("hor",1),
 				new Cat("hor",2),
 				new Cat("hor",3),
 				new Cat("hor",4),
@@ -84,15 +81,20 @@ var myCats=[new Cat("hor",1),
 function imageOrientation(image){
 	var proportion=image.height/image.width;
 	
-	if(proportion>1)return"p";
-	else if(proportion===1)return"s";
-	else if(proportion<1)return"l";
+	if(proportion>1)return"portrait";
+	else if(proportion===1)return"square";
+	else if(proportion<1)return"landscape";
 }
+
+var tempCatScript = null, catAttempts;
 
 /**
  * We've got some cats!
  **/
 function catsBeGot(data) {	
+	console.log("Response from server:");
+	console.log(data);
+	
 	var tempCats = new Array();
 	for (var key in data.cats)
 	{
@@ -113,108 +115,29 @@ function randomizeCats() {
 	var images=document.getElementsByTagName("img"),
 		length=images.length;
 		
-	if(initialLoad){injectProgress(length);}
-	
+	console.log("Images found: "+length);
+		
 	for(var i=0;i<length;i++){
 		var orientation=imageOrientation(images[i]);
 		
-		//Set the width of the img tag to the displayed width
-		//Set the height of the img tag to the displayed height
-		images[i].width = images[i].clientWidth;
-		images[i].height = images[i].clientHeight;
-		
-		//The current cat image
-		var img;
-		
-		if(orientation==="l"){
+		if(orientation==="landscape"){
 			var number=Randomize(giveCat.landscape());
-			img=giveCat.landscape()[number];
-		}else if(orientation==="s"){
+			var img=giveCat.landscape()[number];
+			
+			images[i].src=img.imageurl;
+		}else if(orientation==="square"){
 			var number=Randomize(giveCat.square());
-			img=giveCat.square()[number];
-		}else if(orientation==="p"){
+			var img=giveCat.square()[number];
+			
+			images[i].src=img.imageurl;
+		}else if(orientation==="portrait"){
 			var number=Randomize(giveCat.portrait());
-			img=giveCat.portrait()[number];
-		}else{img=giveCat.portrait()[0]} //If all else fails - the 1st portrait image
-		
-		//Set the image src
-		images[i].src=img.imageurl;
-	}
-
-	//Run a check on the current version of Give Cat (if we can)
-	var ol = new jsLoader();
-	ol.require("http://give.cat/api/version.js",800,true,hideProgressBox(),hideProgressBox()); 
-}
-
-/**
- * Check the version of GiveCat we have against the server
- **/
-function checkVersion(data){
-	//Don't spam people if they have already seen an upgrade message
-	if(data['version'] != null && data['version'] > currentCatVersion && !document.contains(document.getElementById("giveCatFaderInfoBox"))){
-		//A string to add to our page
-		var domString = '<div style="display:block;width:80%;padding-top:15px;margin:0auto;margin-bottom:20px;border:1px solid transparent;border-radius:4px;color:#468847;background-color:#dff0d8;border-color: #d6e9c6;position:fixed;top:5px;left:50%;margin-left:-40%;z-index:501;text-align:center;" id="giveCatFaderInfoBox"><span style="width:28px;height:28px;display:block;float:left;margin-top:-7px;margin-bottom:7px;margin-left:7px;margin-right:-7px;background:url(http://give.cat/assets/img/catprogressspinner.gif) top left no-repeat;"></span><b>Thanks for using Give Cat</b>. Just to let you know, a newer version is available! <a href="http://give.cat/">Check it out</a>.</div>';
-		
-		var bodyE = document.getElementsByTagName("body")[0];
-		bodyE.innerHTML = domString + bodyE.innerHTML;
-		
-		setTimeout(function(){document.getElementsById("giveCatFaderInfoBox").style.display = "none";}, 6500);
+			var img=giveCat.portrait()[number];
+			
+			images[i].src=img.imageurl;
+		}
 	}
 }
-
-/**
- * Inject a progress div showing that we are doing stuff
- *
- * @param	int	number of images we are changing
- **/
-function injectProgress(numberOfImages){
-	var domString = '<div style="display:block; width: 80%; padding-top: 15px; margin: 0 auto; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #468847; background-color: #dff0d8; border-color: #d6e9c6; position: fixed; bottom:5px; left: 50%; margin-left: -40%; z-index: 500; text-align: center;" id="giveCatFaderProgressBox"><strong>We\'re currently making '+numberOfImages+' images squishier!</strong> Please wait.<span style="width:80%; height: 10px; display: block; margin: 0 auto; background: url(http://give.cat/assets/img/catprogressbar.gif) top left repeat-x; margin-bottom: 15px;"></span></div>';
-	
-	var bodyE = document.getElementsByTagName("body")[0];
-	bodyE.innerHTML = bodyE.innerHTML + domString;
-}
-
-function hideProgressBox(){
-	initialLoad = false;
-	document.getElementById("giveCatFaderProgressBox").style.display = "none";
-}
-
-/**
- * 
- *
-function fadeIn(elementToFade){
-	console.log('fade in - '+elementToFade);
-	
-    var element = document.getElementById(elementToFade);
-
-    versionBoxOpacity += 0.1;
-    
-    element.style.opacity = versionBoxOpacity;
-    if(versionBoxOpacity > 1.0) {
-        versionBoxOpacity = 1.0;
-        element.style.opacity = versionBoxOpacity;
-        //Wait 5 seconds and hide the message about a new version
-		setTimeout(fadeOut(elementToFade), 6500);
-    } else {
-        setTimeout(fadeIn(elementToFade), 10);
-    }
-}
-
-function fadeOut(elementToFade){
-	console.log('fade out - '+elementToFade);
-    var element = document.getElementById(elementToFade);
-
-    versionBoxOpacity -= 0.1;
-    
-    element.style.opacity = versionBoxOpacity;
-    if(versionBoxOpacity < 0.0) {
-        versionBoxOpacity = 0.0;
-        element.style.opacity = versionBoxOpacity;
-        element.style.display = "none";
-    } else {
-        setTimeout(fadeOut(elementToFade),10);
-    }
-}*/
 
 /**
  * Epic javascript function that basically checks if the script has been successfully loaded
@@ -283,5 +206,5 @@ function jsLoader()
  **/
 (function(document){
 	var ol = new jsLoader();
-	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function(){},function(){CSPON=true;randomizeCats();}); 
+	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function() {console.log("Content Security Policy = OFF");},function() {console.log("Content Security Policy = ON"); randomizeCats();}); 
 })(document);
