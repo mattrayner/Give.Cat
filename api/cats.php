@@ -26,10 +26,10 @@ ob_start(); // start the output buffer
 ?>
 <?php
 //Include our helper functions (drives our stuff)
-include_once("helperFunctions.php");
+include_once("../lib/php/helperFunctions.php");
 
 //Make a connection to the DB
-$mysql_connection = connectToDB("config.inc.php");
+$mysql_connection = connectToDB();
 
 //Make a query to the database getting every 'cat'
 $result = mysqli_query($mysql_connection,"SELECT * FROM  `cats`");

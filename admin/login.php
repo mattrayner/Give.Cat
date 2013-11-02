@@ -1,13 +1,15 @@
 <?php
+error_reporting(E_ALL);
+
 session_start();
 
 if($_SESSION['loggedin']){
 	header("location: home.php");	
 }
 
-include_once("helperFunctions.php");
+require("../lib/php/helperFunctions.php");
 
-$databaseconnect = connectToDB("config.inc.php");
+$databaseconnect = connectToDB();
 
 //Username and pw sent from login form
 $un = $_POST['un'];
@@ -27,7 +29,7 @@ if ($stmt = $databaseconnect->prepare("SELECT  `id`,`username`,`hash` FROM  `use
     /* fetch value */
     $stmt->fetch();
     
-    include_once("pbkdf2.php");
+    include_once("../lib/php/pbkdf2.php");
 						
 	if( validate_password($pw, $hash) ){
 		$_SESSION['loggedin'] = true;

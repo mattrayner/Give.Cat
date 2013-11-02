@@ -47,7 +47,7 @@ textdomain($domain);
 				<p><?php echo gettext("Drag this button on to your bookmark bar and click it for insta-cute on any website."); ?></p>
 				<div class="row-fluid">
 					<a class="btn btn-large btn-primary" href='<?php
-						$file = file_get_contents('JS/awwcat.database.production.min.js', FILE_USE_INCLUDE_PATH); 
+						$file = file_get_contents('GiveCatJS/givecat.loader.min.js', FILE_USE_INCLUDE_PATH); 
 						echo $file;
 						?>'><?php echo gettext("Give Cats!"); ?></a>
 				</div>

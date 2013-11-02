@@ -4,7 +4,7 @@ session_start();
 //header('Content-Type: image/jpeg'); 
 if(!isset($_GET['id']) || !isset($_SESSION['loggedin']) || !file_exists ( "".$_GET['id'].".jpg" )){header("location: fail.jpg");}
 
-include_once("SimpleImage.php");
+include_once("../../lib/php/SimpleImage.php");
 
 $string = "".$_GET['id'].".jpg";
 

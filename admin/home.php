@@ -5,9 +5,9 @@ if(!$_SESSION['loggedin']){
 	header("location: index.php");	
 }
 
-include_once("helperFunctions.php");
+include_once("../lib/php/helperFunctions.php");
 
-$databaseconnect = connectToDB("config.inc.php");
+$databaseconnect = connectToDB();
 
 $result = $databaseconnect->query("SELECT * FROM `cats` ORDER BY  `cats`.`id` DESC");
 
@@ -35,7 +35,7 @@ if($num_rows <= 0){
     <title>Give Cat admin panel</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/navbar.css" rel="stylesheet">
@@ -93,7 +93,7 @@ if($num_rows <= 0){
 		<?php 
 		if(isset($_GET['e'])){
 			switch($content){
-				case 0: $content = "<b>Error uploading file:</b> ".$_GET['message'].".";
+				case 0: $content = "<b>Error uploading file:</b> Please make sure the combined file size <= 50MB & you are not uploading > 20 files at once.";
 						break;
 				case 1: $content = "<b>Error INSERTING</b> - didn't work.";
 				        break;
@@ -105,7 +105,7 @@ if($num_rows <= 0){
 		}
 		
 		if(isset($_GET['s']) && $_GET['s'] == 1){
-			$content = "<b>Yaaay!</b> - Image successfully uploaded.";
+			$content = "<b>Yaaay!</b> - Image(s) successfully uploaded.";
 			
 			echo('<div class="alert alert-success">'.$content.'</div>');
 		} ?>
@@ -119,8 +119,8 @@ if($num_rows <= 0){
 					<form action="upload_file.php" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="file">Cat file</label>
-							<p class="help-block">Upload a cat image (preferably with the largest side 374px)!</p>
-							<input type="file" name="file" id="file">
+							<p class="help-block">Upload your cat images!<br />(MAX TOTAL SIZE: 50MB)</p>
+							<input type="file" name="files[]" id="file" multiple>
 						</div>
 						<button type="submit" class="btn btn-default">Upload</button>
 						
@@ -190,6 +190,6 @@ if($num_rows <= 0){
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 </body>
 </html>
