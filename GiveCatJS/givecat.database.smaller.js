@@ -1,4 +1,5 @@
 /**
+ * ========== VARIABLE NAMES SHORTENED ===========
  * New database version of the awwcat JS file
  *
  * Need to run AJAX (possibly on detection of JQuery)
@@ -15,7 +16,7 @@ function Cat(orientation,imageid){
 }
 
 //GLOBAL VARS USED THROUGHOUT
-var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=null,progressDivExists=document.contains(document.getElementById("giveCatFaderProgressBox"));
+var currentCatVersion=parseFloat("0.7"),versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=null,progressDivExists=document.contains(document.getElementById("giveCatFaderProgressBox"));
 
 /**
  * Object used to filter our cats into the appropriate size.
@@ -49,7 +50,7 @@ function Randomize(images){
 }
 
 /**
- * Our array of cats along with their orientations (this is a fallback when AJAX fails
+ * Our array of cats along with their orientations (this is a fallback when AJAX fails)
  **/
 var myCats=[new Cat("hor",1),
 				new Cat("hor",2),
@@ -139,27 +140,8 @@ function randomizeCats() {
 		images[i].src=img.imageurl;
 	}
 
-	//Run a check on the current version of Give Cat (if we can)
-	var ol2 = new jsLoader();
-	ol2.require("http://give.cat/api/version.js",200,true,function(){},function(){}); 
-	hideProgress();
-}
-
-/**
- * Check the version of GiveCat we have against the server
- **/
-function checkVersion(data){
-	//Don't spam people if they have already seen an upgrade message
-	if(data.version !== null && data.version > currentCatVersion && !document.contains(document.getElementById("giveCatFaderInfoBox"))){
-		var div = document.createElement('div');
-		div.id = "giveCatFaderProgressBox";
-		div.style.display = "none";
-		
-		document.getElementsByTagName("body")[0].appendChild(div);
-				
-		//Open a window to the give cat update page :)
-		if(data.poke !== null) window.open("http://give.cat/update.php", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
-	}
+	//Hide the progress div (we're done here)
+	progressDiv.style.display = "none";
 }
 
 /**
@@ -170,27 +152,25 @@ function checkVersion(data){
 function injectProgress(numberOfImages){
 	if(!progressDivExists){
 		progressDiv = document.createElement('div');
-		progressDiv.style.id = "giveCatFaderProgressBox";
-		progressDiv.style.width = '100%';
+		progressDiv.id = "giveCatFaderProgressBox";
+		//progressDiv.style.width = '100%';
 		progressDiv.style.borderTop = '1px solid #bce8f1';
 		progressDiv.style.position = 'fixed';
-		progressDiv.style.bottom = '0px';
+		progressDiv.style.bottom = '0';
 		progressDiv.style.left = '0';
 		progressDiv.style.zIndex = '500';
 		progressDiv.style.color = '#3a87ad';
 		progressDiv.style.backgroundColor = '#d9edf7';
-		progressDiv.style.paddingTop = "5px";
-		progressDiv.style.paddingBottom = "5px";
-		progressDiv.style.textAlign = "center";
+		progressDiv.style.padding = "5px";
+		//progressDiv.style.paddingTop = "5px";
+		//progressDiv.style.paddingBottom = "5px";
+		//progressDiv.style.textAlign = "center";
 		document.getElementsByTagName('body')[0].appendChild(progressDiv);
+	}else{
+		progressDiv = document.getElementById("giveCatFaderProgressBox");
 	}
 	progressDiv.style.display = "block";
 	progressDiv.textContent = 'We\'re currently making '+numberOfImages+' images squishier!';
-}
-
-function hideProgress(){
-	initialLoad = false;
-	setTimeout(function(){progressDiv.style.display = "none";},1000);
 }
 
 /**
@@ -260,5 +240,5 @@ function jsLoader()
  **/
 (function(document){
 	var ol = new jsLoader();
-	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function(){},function(){CSPON=true;randomizeCats();}); 
+	ol.require("http://give.cat/api/cats.php?callback=catsBeGot",800,true, function(){},function(){randomizeCats();}); 
 })(document);

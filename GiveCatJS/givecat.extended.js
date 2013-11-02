@@ -15,7 +15,7 @@ function Cat(orientation,imageid){
 }
 
 //GLOBAL VARS USED THROUGHOUT
-var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=null,progressDivExists=document.contains(document.getElementById("giveCatFaderProgressBox"));
+var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=document.getElementById("giveCatFaderProgressBox"),progressDivExists=document.contains(document.getElementById("giveCatFaderProgressBox"));
 
 /**
  * Object used to filter our cats into the appropriate size.
@@ -142,6 +142,7 @@ function randomizeCats() {
 	//Run a check on the current version of Give Cat (if we can)
 	var ol2 = new jsLoader();
 	ol2.require("http://give.cat/api/version.js",200,true,function(){},function(){}); 
+	
 	hideProgress();
 }
 
@@ -151,14 +152,14 @@ function randomizeCats() {
 function checkVersion(data){
 	//Don't spam people if they have already seen an upgrade message
 	if(data.version !== null && data.version > currentCatVersion && !document.contains(document.getElementById("giveCatFaderInfoBox"))){
-		var div = document.createElement('div');
+		var div = document.createElement("div");
 		div.id = "giveCatFaderProgressBox";
 		div.style.display = "none";
 		
 		document.getElementsByTagName("body")[0].appendChild(div);
 				
 		//Open a window to the give cat update page :)
-		if(data.poke !== null) window.open("http://give.cat/update.php", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+		if(data.poke !== null) window.open("http://give.cat/update.php", "_blank", "location=yes,height=570,width=520,scrollbars=yes,status=yes");
 	}
 }
 
@@ -168,24 +169,22 @@ function checkVersion(data){
  * @param	int	number of images we are changing
  **/
 function injectProgress(numberOfImages){
-	if(!progressDivExists){
-		progressDiv = document.createElement('div');
-		progressDiv.style.id = "giveCatFaderProgressBox";
-		progressDiv.style.width = '100%';
-		progressDiv.style.borderTop = '1px solid #bce8f1';
-		progressDiv.style.position = 'fixed';
-		progressDiv.style.bottom = '0px';
-		progressDiv.style.left = '0';
-		progressDiv.style.zIndex = '500';
-		progressDiv.style.color = '#3a87ad';
-		progressDiv.style.backgroundColor = '#d9edf7';
-		progressDiv.style.paddingTop = "5px";
-		progressDiv.style.paddingBottom = "5px";
-		progressDiv.style.textAlign = "center";
-		document.getElementsByTagName('body')[0].appendChild(progressDiv);
-	}
+	progressDiv = document.createElement("div");
+	progressDiv.style.id = "giveCatFaderProgressBox";
+	progressDiv.style.width = "100%";
+	progressDiv.style.borderTop = "1px solid #bce8f1";
+	progressDiv.style.position = "fixed";
+	progressDiv.style.bottom = "0px";
+	progressDiv.style.left = "0";
+	progressDiv.style.zIndex = "500";
+	progressDiv.style.color = "#3a87ad";
+	progressDiv.style.backgroundColor = "#d9edf7";
+	progressDiv.style.paddingTop = "5px";
+	progressDiv.style.paddingBottom = "5px";
+	progressDiv.style.textAlign = "center";
 	progressDiv.style.display = "block";
-	progressDiv.textContent = 'We\'re currently making '+numberOfImages+' images squishier!';
+	progressDiv.textContent = "We&#39;re currently making "+numberOfImages+" images squishier!";
+	document.getElementsByTagName("body")[0].appendChild(progressDiv);
 }
 
 function hideProgress(){
