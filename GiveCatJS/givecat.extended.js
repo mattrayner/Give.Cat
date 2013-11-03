@@ -15,7 +15,7 @@ function Cat(orientation,imageid){
 }
 
 //GLOBAL VARS USED THROUGHOUT
-var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=document.getElementById("giveCatFaderProgressBox"),progressDivExists=document.contains(document.getElementById("giveCatFaderProgressBox"));
+var currentCatVersion=parseFloat("0.7"),CSPON=false,versionBoxOpacity=0.0,initialLoad=!document.contains(document.getElementById("giveCatFaderInfoBox")),tempCatScript=null, catAttempts=null,progressDiv=null;
 
 /**
  * Object used to filter our cats into the appropriate size.
