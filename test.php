@@ -31,6 +31,10 @@ textdomain($domain);
     <!-- Custom styles for this template -->
     <link href="assets/css/givecat.css" rel="stylesheet">
 
+    <style>
+    .page{min-height: 700px;}
+    </style>
+
 	<!-- Facebook Image -->
 	<meta property="og:image" content="http://give.cat/assets/img/CatBackground.jpg"/>
 
@@ -44,7 +48,7 @@ textdomain($domain);
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top gc-navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -81,7 +85,7 @@ textdomain($domain);
       </div>
     </div>
 
-    <section class="page page-welcome">
+    <section class="page page-welcome blue-cat">
       <div class="container">
         <header>
           <h1>Meow!</h1>
@@ -163,9 +167,11 @@ textdomain($domain);
     <!-- Windows Phone bookmarklet -->
 
 
-    <section class="page page-errata">
+    <section class="page page-cats">
       <div class="container">
-        
+        <header>
+          <h2>Meet the cats</h2>
+        </header>
       </div>
     </section>
 
@@ -266,6 +272,25 @@ textdomain($domain);
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        window.onresize = function(event) {
+          setPageHeight();
+        }
+
+        setPageHeight();
+      })
+
+      function setPageHeight(){
+        var windowHeight = $(window).height(),
+            navbarHeight = parseInt($(".navbar").height()),
+            navbarMargin = parseInt($(".navbar").css("margin-bottom"))
+            pageHeight1 = windowHeight - (navbarHeight + navbarMargin);
+            pageHeight = windowHeight - navbarHeight;
+
+        $("head style").text(".page { min-height: "+pageHeight+"px; } .page:nth-child(1) { min-height: "+pageHeight1+"px; }");
+      }
+    </script>
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

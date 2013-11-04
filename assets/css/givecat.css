@@ -1,5 +1,6 @@
 body {min-height: 2000px;padding-top: 70px;}
 .pull-center { margin: 0 auto; float: none; }
+.navbar-default {background-color: rgba(248,248,248,0.85);}
 .instruction {width: 280px; height: 196px;}
 .instruction-1{background: url(../img/instructions-desktop-1.png) top left no-repeat;}
 .well hr {margin-top: 5px; margin-bottom: 5px;}
@@ -7,4 +8,13 @@ body {min-height: 2000px;padding-top: 70px;}
 .instruction-number {position: absolute;display: block;bottom: -3px;right: 0;font-size: 80px;width:41px;height:64px;line-height: 1 !important;text-align:right; font-weight: bold; opacity: 0.75;}
 .instruction-number-1 {width: 32px;}
 #instruction-3-trigger {background: #AFAFAF;color: #fff;padding: 5px;border-radius: 20px;}
-#instruction-3-trigger:hover { background: #808080; text-decoration: none; };
+#instruction-3-trigger:hover { background: #808080; text-decoration: none; }
+
+.page{width:100%;min-height:700px;display:block; border-bottom: 1px solid #CCC; overflow: hidden;}
+.page .container {z-index: 10;}
+
+.blue-cat {
+background-image: url(../img/blueCat.jpg);
+background-position: 25% 50%;
+background-repeat: no-repeat;
+}
