@@ -89,9 +89,11 @@ outputCatsJSON($json, false);
 function outputCatsJSON($json, $justJSON){
 	//JSON if no callback is set
 	if( !isset($_GET['callback']) || $justJSON) {
+    header('Content-type: application/json');
 		//Make sure the JSON is set or output the cache file
 		if(isset($json) && $json != NULL){echo($json);}else{include("cache/cats.json");}
 	}else{
+    header('Content-type: application/javascript');
 		//Echo out our JSONP
 		echo("{$_GET['callback']}(");
 
