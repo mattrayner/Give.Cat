@@ -217,7 +217,7 @@ textdomain($domain);
         <div clas="container">
           <div class="col-sm-4 padme margin-top margin-bottom">
             <a href="#" class="gc-logo-inverse pull-center ir"><?php echo gettext("give<strong>cat</strong>"); ?></a>
-            <p class="text-center copy-notice"><?php echo gettext('Copyright &copy;2013 <a href="http://www.mattrayner.co.uk/" target="_blank">Matt Rayner</a>. Credit to <a href="http://heygirl.io">Hey Girl</a> for the original cancept.'); ?></p>
+            <p class="text-center copy-notice"><?php echo gettext('Copyright &copy;2013 <a href="http://www.mattrayner.co.uk/" target="_blank">Matt Rayner</a>. Credit to <a href="http://heygirl.io">Hey Girl</a> for the inspiration.'); ?></p>
           </div>
           <div class="col-sm-4 inverse padme margin-top margin-bottom">
             <?php echo gettext('<h4>Català?</h4>
