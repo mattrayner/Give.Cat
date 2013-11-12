@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Cross Domain Storage Example</title>
+		<script type="text/javascript" src="xds.js"></script>
+		<script>
+		window.onload = function(){
+			
+			//create a new xds instance
+			var x = new xds("http://give.cat/xds-server/");
+			
+			//test out the set, get, and remove item functions.
+			/*x.setItem(function(response){
+				console.log('Item set, response: ');
+				console.log(response);
+				*/
+				x.getItem(function(val, response){
+					console.log('Item get, val: ' + val + ' response: ');
+					console.log(response);
+				});
+			});
+			
+		};	
+		</script>
+	</head>
+	<body>
+		<div>
+		Test
+		</div>
+	</body>
+</html>
