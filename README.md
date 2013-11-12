@@ -1,4 +1,4 @@
-<img src="http://give.cat/assets/img/gc-git-logo.png">
+<img src="http://give.cat/assets/img/give-cat-logo.png">
 > "Making the internet a squishier place!"
 
 <i>Give Cat is an attempt to bring happiness and joy to everyday life... One cat at a time.</i>
