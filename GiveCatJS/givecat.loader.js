@@ -15,9 +15,7 @@ function Cat(orientation, imageid) {
 }
 
 //GLOBAL VARS USED THROUGHOUT
-var initialLoad = (document.getElementById("giveCatFaderInfoBox") == null),
-  tempCatScript = null,
-  catAttempts = null,
+var tempCatScript = null,
   progressDiv = document.getElementById("giveCatFaderProgressBox");
 
 /**
@@ -155,13 +153,12 @@ function injectProgress(numberOfImages) {
   progressDiv.style.paddingBottom = "5px";
   progressDiv.style.textAlign = "center";
   progressDiv.style.display = "block";
-  progressDiv.textContent = "We&#39;re currently making " + numberOfImages + " images squishier!";
+  progressDiv.textContent = "We are currently making " + numberOfImages + " images squishier!";
   document.getElementsByTagName("body")[0].appendChild(progressDiv);
 
 }
 
 function hideProgress() {
-  initialLoad = false;
   setTimeout(function () {
     progressDiv.style.display = "none"
   }, 1000);

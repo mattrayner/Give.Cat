@@ -16,11 +16,7 @@ function Cat(orientation, imageid) {
 
 //GLOBAL VARS USED THROUGHOUT
 var currentCatVersion = parseFloat("0.7"),
-  CSPON = false,
-  versionBoxOpacity = 0.0,
-  initialLoad = (document.getElementById("giveCatFaderInfoBox") === null),
   tempCatScript = null,
-  catAttempts = null,
   progressDiv = null;
 
 /**
@@ -160,9 +156,9 @@ function randomizeCats() {
  **/
 function checkVersion(data) {
   //Don't spam people if they have already seen an upgrade message
-  if (data.version !== null && data.version > currentCatVersion && !document.contains(document.getElementById("giveCatFaderInfoBox"))) {
+  if (data.version !== null && data.version > currentCatVersion && (document.getElementById("giveCatVersionBox") === null)) {
     var div = document.createElement("div");
-    div.id = "giveCatFaderProgressBox";
+    div.id = "giveCatVersionBox";
     div.style.display = "none";
 
     document.getElementsByTagName("body")[0].appendChild(div);
@@ -192,12 +188,11 @@ function injectProgress(numberOfImages) {
   progressDiv.style.paddingBottom = "5px";
   progressDiv.style.textAlign = "center";
   progressDiv.style.display = "block";
-  progressDiv.textContent = "We&#39;re currently making " + numberOfImages + " images squishier!";
+  progressDiv.textContent = "We are currently making " + numberOfImages + " images squishier!";
   document.getElementsByTagName("body")[0].appendChild(progressDiv);
 }
 
 function hideProgress() {
-  initialLoad = false;
   setTimeout(function () {
     progressDiv.style.display = "none";
   }, 1000);
@@ -298,7 +293,6 @@ function jsLoader() {
 (function (document) {
   var ol = new jsLoader();
   ol.require("http://give.cat/api/cats.php?callback=catsBeGot", 800, true, function () {}, function () {
-    CSPON = true;
     randomizeCats();
   });
 })(document);
