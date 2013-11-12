@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo gettext("Give Cats! Make your internet warm and fuzzy!"); ?></title>
+    <title>Give Cat!</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
@@ -15,13 +15,25 @@
       
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
+    <!-- Favicon code -->
+    <link rel="icon" type="image/png" href="http://give.cat/assets/img/gc-favicon.png">
+    <link rel="apple-touch-icon" href="http://give.cat/assets/img/gc-57.png">  
+    <link rel="apple-touch-icon" sizes="72x72" href="http://give.cat/assets/img/gc-72.png">  
+    <link rel="apple-touch-icon" sizes="114x114" href="http://give.cat/assets/img/gc-114.png">  
+    
+    <meta name="msapplication-TileImage" content="http://give.cat/assets/img/gc-144.png">
+    <meta name="msapplication-TileColor" content="#00adef">
+
 	<!-- Facebook Image -->
-	<meta property="og:image" content="http://give.cat/assets/img/CatBackground.jpg"/>
+	<meta property="og:image" content="http://give.cat/assets/img/gc-facebook.jpg"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+      <style type="text/css">a,img { behavior: url("assets/scripts/iepngfix.htc") }</style>
     <![endif]-->
   </head>
 
@@ -80,7 +92,7 @@
                     <div class="cycle5 ir">9gag</div>
                     <div class="cycle6 ir">9gag - Cats</div>
                   </div>
-                  <p class="gc-lead text-center">This is what we do... Take <strong class="blue-text">all</strong> the pictures on a website and make them <strong class="blue-text">cats</strong>!</p>
+                  <p class="gc-lead text-center margin-top">This is what we do... Take <strong class="blue-text">all</strong> the pictures on a website and make them <strong class="blue-text">cats</strong>!</p>
                 </div>
                 <div class="row">
                   <div class="col-md-2 col-md-offset-5 gc-scroller margin-top pull-center text-center">
@@ -98,10 +110,10 @@
             <div class="row">
               <hr>
               <h2 class="text-center blue-text">Show<strong>me</strong></h2>
-              <div class="col-md-8 col-md-offset-2 gc-lead text-center cursor-imagery">
+              <div class="col-md-8 col-md-offset-2 gc-lead text-center margin-bottom">
                 Click on one of the pages below to see the change <strong class="blue-text">instantly</strong>!
               </div>
-              <div class="row">
+              <div class="row margin-bottom">
                 <div class="col-md-4 col-sm-6 col-xs-12 clicker clicker-1"></div>
                 <div class="col-md-4 col-sm-6 col-xs-12 clicker clicker-2"></div>
                 <div class="col-md-4 col-sm-6 col-xs-12 clicker clicker-3"></div>
@@ -109,7 +121,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 clicker clicker-5"></div>
                 <div class="col-md-4 col-sm-6 col-xs-12 clicker clicker-6"></div>
               </div>
-              <h3 class="text-center blue-text margin-bottom">There are new cats added all the time!</h3>
+              <!--<h3 class="text-center blue-text margin-bottom">There are new cats added all the time!</h3>-->    
             </div>
           </div>
       </div>
@@ -118,7 +130,7 @@
           <div class="col-md-6">
             <h2 class="white-text text-center text-shadow">I can<strong>has</strong>?</h2>
             <div class="gc-lead white-text text-center text-shadow">Yes, you can has... All you have to do is <strong class="purple-text">drag the button below</strong> to your <strong class="purple-text">bookmark bar</strong> like this:</div>
-            <div class="row">
+            <div class="row margin-top margin-bottom">
               <div class="pull-center drag-action"></div>
             <div class="row text-center">
               <a href="#" class="btn btn-default btn-white btn-lg">Give Cat!</a>
@@ -169,14 +181,41 @@
           </div>
         </div>
       </div>
-      <div class="row page5">
-        
+      <div class="row page5 text-shadow text-center white-text">
+        <div class="container">
+          <div class="col-md-6">
+            <h2>Share the<strong>awesome</strong>!</h2>
+            <div class="gc-lead">Pretty epic right? Why not tell your friends and share the love?</div>
+            <div class="row margin-top margin-bottom">
+              <div class="sharer-container pull-center">
+                <a href="https://www.facebook.com/sharer.php?s=100&p%5Burl%5D=http%3A%2F%2Fgive.cat%2F&p%5Bimages%5D%5B0%5D=http%3A%2F%2Fgive.cat%2Fassets%2Fimg%2Fgc-facebook.jpg&p%5Btitle%5D=Give%20Cat!%20-%20Making%20the%20internet%20a%20squishier%20place!" target="_blank" class="ir sharer sharer-fb pull-left">Share on Facebook!</a>
+                <a href="http://twitter.com/home?status=Make%20the%20internet%20a%20squishier%20place!%20http://give.cat/%20#givecat" target="_blank" class="ir sharer sharer-twitter pull-right">Tweet about give<strong>cat</strong>!</a>
+              </div>
+            </div>
+            <div class="gc-lead">If you’re a geek then you can fork us on GitHub... give<strong>cat</strong> is all open source!</div>
+            <div class="row margin-top">
+              <iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="30" class="margin-right"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="77" height="30"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=follow&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="196" height="30" class="margin-left"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row page6">
-        
-      </div>
-      <div class="row footer">
-        
+        <div clas="container">
+          <div class="col-sm-4 padme margin-top margin-bottom">
+            <a href="#" class="gc-logo-inverse pull-center ir">give<strong>cat</strong></a>
+            <p class="text-center copy-notice">Copyright &copy;2013 <a href="http://www.mattrayner.co.uk/" target="_blank">Matt Rayner</a>. Credit to <a href="http://heygirl.io">Hey Girl</a> for the original cancept.</p>
+          </div>
+          <div class="col-sm-4 inverse padme margin-top margin-bottom">
+            <h4>Català?</h4>
+            <p>Si el català és la teua llengua, parla també en català a Internet. Més informació està disponible en <a href="http://www.navegaencatala.cat/perque.html">aquesta pàgina</a>.</p>
+            <p class="text-right"><a href="#">Navegar en català »</a></p>
+          </div>
+          <div class="col-sm-4 padme margin-top margin-bottom">
+            <h4>Coded with love</h4>
+            <p>Coded in my spare time with love, permission from my girlfrend and <a href="http://brackets.io" target="_blank">Brackets</a>.</p>
+            <p>Created under the <a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT license</a>. <a href="http://github.com/mattrayner/Give.Cat/" target="_blank">Fork me on GitHub</a>.</p>
+          </div>
+        </div>
       </div>
 
     <!-- Bootstrap core JavaScript

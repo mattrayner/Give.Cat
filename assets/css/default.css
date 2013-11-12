@@ -4,10 +4,14 @@ body {color: #595959; font-family: 'Source Sans Pro', sans-serif;}
 
 .margin-top {margin-top: 20px;}
 .margin-bottom {margin-bottom: 20px;}
+.margin-left {margin-left: 10px;}
+.margin-right {margin-right: 10px;}
+
+.padding-top {padding-top: 5px;}
 
 .inline-block {display: inline-block;}
 
-.navbar-trans {background-color: rgba(255,255,255,0.95); border-color: rgba(226,226,226,0.95);}
+.navbar-trans {background-color: rgba(255,255,255,0.85); border-color: rgba(226,226,226,0.85);}
 
 .navbar-header {float: left;}
 
@@ -27,24 +31,28 @@ body {color: #595959; font-family: 'Source Sans Pro', sans-serif;}
 .page1 {height: 650px; background: url(../img/page1.png) bottom center no-repeat #fff; border-bottom: 1px solid #ccc; margin-top:60px;}
 .page2 {min-height: 595px; background: url(../img/page2.png) top center no-repeat #cdecfc;}
 .page2 hr {border-color: #80d0dd}
-.page3 {min-height: 405px; background: url(../img/page3.png) top center no-repeat #6e4db9; border-bottom: 1px solid #504491;}
-.page4 {min-height: 100px; background-color: #fff; border-bottom: 1px solid #ccc;}
-.page5 {min-height: 424px; background: url(../img/page5.jpg) top center no-repeat #070e18; border-bottom: 1px solid #ccc;}
+.page3 {min-height: 450px; background: url(../img/page3.png) center 20px no-repeat #6e4db9; border-bottom: 1px solid #504491;}
+.page4 {background-color: #fff; border-bottom: 1px solid #ccc;}
+.page5 {min-height: 340px; background: url(../img/page5.jpg) top center no-repeat #070e18; border-bottom: 1px solid #616161;}
+.page6 {min-height: 100px; background-color: #DBDCDC; color: #424242;}
+.page6 .inverse {background-color: #424242; color: #DBDCDC;}
 
 .blue-padder {min-height: 505px;}
 
 .full-height-navbar { height: 50px; }
 
-.gc-lead {font-size: 19px; font-weight: 600;}
+.gc-lead {font-size: 19px; font-weight: 600; line-height:1.2;}
 .gc-lead .callout {color: #00adef; font-size: 28px; clear:both; display:block;}
 
 .gc-scroller {font-size: 28px; font-weight: 700; width: 240px; padding: 0;}
 
 .text-center { text-align:center; }
+.text-right {text-align: right;}
 .text-shadow {text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);}
 
 .gc-logo-lg {width: 352px; height: 116px; background: url(../img/give-cat-logo.png) 50% 50% no-repeat;}
 .gc-logo-sm {width: 129px; height: 50px; background: url(../img/give-cat-logo-sm.png) 50% 50% no-repeat;}
+.gc-logo-inverse {width: 200px; height: 62px; background: url(../img/give-cat-logo-inverse.png) 50% 50% no-repeat;}
 
 h2 {font-size: 40px;}
 
@@ -61,7 +69,7 @@ h3 {font-size: 43px; font-weight: 300;}
 
 .cursor-imagery {padding-bottom: 60px; background: url(../img/give-cat-clicker.png) bottom right no-repeat; margin-bottom: 5px;}
 
-.clicker {height: 175px; background-position: center center; background-repeat:no-repeat; margin-bottom: 10px;}
+.clicker {height: 175px; background-position: center center; background-repeat:no-repeat; margin-bottom: 10px; cursor: pointer;}
 .clicker-1 {background-image: url(../img/examples/1.png);}
 .clicker-1.clicked {background-image: url(../img/examples/1-clicked.png);}
 .clicker-2 {background-image: url(../img/examples/2.png);}
@@ -79,6 +87,17 @@ h3 {font-size: 43px; font-weight: 300;}
 
 .dogs {margin-top: 20px; text-align: center;}
 .dogs>div {height: 175px; margin-bottom: 20px;}
+
+.sharer-container {width: 186px;}
+.sharer {width: 90px;height: 69px; background-position: 50% 50%; background-repeat: no-repeat;}
+.sharer-fb {background-image: url(../img/share-fb.png);}
+.sharer-twitter {background-image: url(../img/share-twitter.png);}
+
+.copy-notice {font-size: 13px;}
+
+.page6 p {line-height: 1.2;}
+.page6 a {color: #424242; font-weight: 600; text-decoration:underline;}
+.page6 .inverse a {color: #7c7c7c;}
 
 /* FINAL CSS */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
