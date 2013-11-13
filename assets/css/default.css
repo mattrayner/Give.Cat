@@ -19,16 +19,21 @@ body {color: #595959; font-family: 'Source Sans Pro', sans-serif;}
 .progress-dot {color: #919396; opacity: 0.4; font-size: 41px; line-height: 1;}
 .progress-dot.active {color: #00adef; opacity: 1;}
 
+.light-blue-text {color: #a7ddea;}
 .blue-text {color: #00adef;}
 .white-text {color: #fff;}
 .purple-text {color: #cfcaff;}
+
+.blue-box {background-color: #00adef;}
 
 .animated-arrows {width: 240px;}
 .animated-arrows span {font-size: 50px;color: #00adef; line-height: 0.5; }
 .purple-arrows span {color: #afa1ff;}
 
+.intital-margin {margin-top:51px;}
+
 /* PAGE SETUP CODE */
-.page1 {height: 650px; background: url(../img/page1.png) bottom center no-repeat #fff; border-bottom: 1px solid #ccc; margin-top:60px;}
+.page1 {height: 650px; background: url(../img/page1.png) bottom center no-repeat #fff; border-bottom: 1px solid #ccc;}
 .page2 {min-height: 595px; background: url(../img/page2.png) top center no-repeat #cdecfc;}
 .page2 hr {border-color: #80d0dd}
 .page3 {min-height: 450px; background: url(../img/page3.png) center 20px no-repeat #6e4db9; border-bottom: 1px solid #504491;}
@@ -93,6 +98,9 @@ h3 {font-size: 43px; font-weight: 300;}
 .sharer {width: 90px;height: 69px; background-position: 50% 50%; background-repeat: no-repeat;}
 .sharer-fb {background-image: url(../img/share-fb.png);}
 .sharer-twitter {background-image: url(../img/share-twitter.png);}
+
+.info-button {width: 24px; height: 24px; background: url(../img/gc-info.png) top center no-repeat; display:inline-block !important;}
+.info-button:hover {background-image: url(../img/gc-info-over.png);}
 
 .copy-notice {font-size: 13px;}
 

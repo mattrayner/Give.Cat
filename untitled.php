@@ -67,8 +67,12 @@ textdomain($domain);
         </p>
       </div>
     </div>
-
-      <div class="row page1">
+      <div class="row blue-box intital-margin">
+        <div class="container">
+          <h3 class="text-center light-blue-text margin-top margin-bottom"><?php echo gettext("Get the latest version:"); ?> <a class="btn btn-lg btn-default btn-white" href=<?php echo("'javascript: ".grabBookmarklet()."'"); ?>><?php echo gettext("Give Cat!"); ?></a><a class="info-button ir" href="#">i</a></h3>  
+        </div>
+      </div>
+      <div class="row page1 margin-top">
           <div class="container">
             <div class="row">
               <h1 class="gc-logo-lg pull-center ir"><?php echo gettext("give<strong>cat</strong>"); ?></h1>
@@ -210,6 +214,13 @@ textdomain($domain);
             <div class="row margin-top">
               <iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="30" class="margin-right"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="77" height="30"></iframe><iframe src="http://ghbtns.com/github-btn.html?user=mattrayner&repo=Give.Cat&type=follow&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="196" height="30" class="margin-left"></iframe>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row blue-box margin-top margin-bottom">
+          <div class="container">
+            <h3 class="text-center light-blue-text margin-top margin-bottom"><?php echo gettext("Get the latest version:"); ?> <a class="btn btn-lg btn-default btn-white" href=<?php echo("'javascript: ".grabBookmarklet()."'"); ?>><?php echo gettext("Give Cat!"); ?></a><a class="info-button ir" href="#">i</a></h3>  
           </div>
         </div>
       </div>
