@@ -30,6 +30,8 @@ body {color: #595959; font-family: 'Source Sans Pro', sans-serif;}
 .animated-arrows span {font-size: 50px;color: #00adef; line-height: 0.5; }
 .purple-arrows span {color: #afa1ff;}
 
+.purple-box {background-color: #6e4db9;}
+
 .intital-margin {margin-top:51px;}
 
 /* PAGE SETUP CODE */
@@ -64,7 +66,7 @@ h2 {font-size: 40px;}
 
 h3 {font-size: 43px; font-weight: 300;}
 
-.cycle-container {width: 568px; height: 308px;}
+.cycle-container {width: 568px; height: 308px; overflow: hidden;}
 .cycle1, .cycle2, .cycle3, .cycle4, .cycle5, .cycle6 {background-size: cover; background-position: bottom center; background-repeat:no-repeat; border-bottom: 1px solid #80d0dd; width:568px; height: 308px;}
 .cycle1 {background-image: url(../img/cycles/bbc.png);}
 .cycle2 {background-image: url(../img/cycles/bbc-cat.png);}
@@ -99,8 +101,8 @@ h3 {font-size: 43px; font-weight: 300;}
 .sharer-fb {background-image: url(../img/share-fb.png);}
 .sharer-twitter {background-image: url(../img/share-twitter.png);}
 
-.info-button {width: 24px; height: 24px; background: url(../img/gc-info.png) top center no-repeat; display:inline-block !important;}
-.info-button:hover {background-image: url(../img/gc-info-over.png);}
+.info-button {width: 24px; height: 32px; background: url(../img/gc-info-over.png) bottom center no-repeat; display:inline-block !important; border: none; opacity: 0.5;}
+.info-button:hover {opacity: 1;}
 
 .copy-notice {font-size: 13px;}
 
@@ -111,3 +113,5 @@ h3 {font-size: 43px; font-weight: 300;}
 /* FINAL CSS */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
+
+.row {margin-left: 0; margin-right: 0;}

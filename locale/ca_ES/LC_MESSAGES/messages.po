@@ -1,65 +1,177 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013 Give Cat
+# Copyright (C) Give Cat
 # This file is distributed under the same license as the Give Cat package.
-# Matt Rayner <matt@mattrayner.co.uk>, 2013.
+# Matt Rayner <matt@give.cat>, 2013.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-03 22:30+0100\n"
-"PO-Revision-Date: 2013-10-03 22:36+0100\n"
-"Last-Translator: Matt Rayner <matt@mattrayner.co.uk>\n"
-"Language-Team: Catalan GOOGLE TRANSLATE <LL@li.org>\n"
+"POT-Creation-Date: 2013-11-19 16:52+0000\n"
+"PO-Revision-Date: 2013-11-19 17:05+0000\n"
+"Last-Translator: Matt Rayner <matt@give.cat>\n"
+"Language-Team: Catalan <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: index.php:21
-msgid "Give Cats! Make your internet warm and fuzzy!"
-msgstr "Give Cats! Fes que el teu internet càlida i difusa!"
+#: index.php:25 index.php:74 index.php:182 index.php:277 index.php:331
+msgid "Give Cat!"
+msgstr "Give Cat!"
 
-#: index.php:32 index.php:43
-msgid "Meow!"
-msgstr "Meow!"
+#: index.php:58 index.php:82 index.php:208 index.php:286
+msgid "give<strong>cat</strong>"
+msgstr "give<strong>cat</strong>"
 
-#: index.php:33
+#: index.php:74 index.php:277
+msgid "Get the latest version:"
+msgstr "Obtingui l'última versió:"
+
+#: index.php:87
 msgid ""
-"Turn a boring news site into the cutest place on earth. Hide your friend's "
-"ugly face with something squishy."
-msgstr ""
-"Al seu torn un lloc de notícies avorrit en el lloc més bonic a la terra. Amaga lleig "
-"rostre del seu amic amb una mica tou."
+"News websites getting you down? Can't face another look at 9gag?<br/>Or are "
+"you just fed up of looking at your friend's ugly faces?"
+msgstr "llocs web de notícies que aconseguir baix? No es pot fer front a un altre cop d'ull a 9gag?<br/>O són "
+"que acaba fart de veure les cares lletges del seu amic?"
 
-#: index.php:34
+#: index.php:88
+msgid "You've come to the right place..."
+msgstr "Vostè ha vingut al lloc correcte ..."
+
+#: index.php:125
 msgid ""
-"Drag this button on to your bookmark bar and click it for insta-cute on any "
-"website."
+"This is what we do... Take <strong class=\"blue-text\">all</strong> the "
+"pictures on a website and make them <strong class=\"blue-text\">cats</"
+"strong>!"
 msgstr ""
-"Arrossegueu aquest botó a la teva barra de marcadors i feu clic en ell per la instal-valent "
-"en qualsevol lloc web.Dóna-li gats!"
+"Això és el que fem ... Prendre <strong class=\"blue-text\">tot</strong> la "
+"imatges en una pàgina web i fer que siguin <strong class=\"blue-text\">gats</"
+"strong>!"
 
-#: index.php:36
-msgid "Give Cats!"
-msgstr "Give Cats!"
+#: index.php:131
+msgid "Keep Going..."
+msgstr "Segueix i Segueix ..."
 
-#: index.php:44
+#: index.php:148
+msgid "Show<strong>me</strong>"
+msgstr "Mostra<strong>em</strong>"
+
+#: index.php:151
 msgid ""
-"Thanks for coming! At the moment you need to use a computer or a tablet to "
-"use us (that's changing)."
+"Click on one of the pages below to see the change <strong class=\"blue-text"
+"\">instantly</strong>!"
 msgstr ""
-"Gràcies per venir! En aquests moments és necessari utilitzar un ordinador o una tauleta"
-"usar-nos (això està canviant)."
+"Feu clic a una de les pàgines següents per veure el canvi <strong class=\"blue-text"
+"\">instantàniament</strong>!"
 
-#: index.php:45
+#: index.php:171
+msgid "I can<strong>has</strong>?"
+msgstr "Puc<strong>té</strong>?"
+
+#: index.php:173
 msgid ""
-"Soon there'll be an iPhone app with all sorts of squishy goodies but until "
-"then, come back on something bigger :)"
+"Yes, you can has... All you have to do is <strong class=\"purple-text\">drag "
+"the button below</strong> to your <strong class=\"purple-text\">bookmark "
+"bar</strong> like this:"
 msgstr ""
-"Aviat hi haurà una aplicació per l'iPhone amb tot tipus de llaminadures toves, però fins "
-"llavors, torna en alguna cosa més gran :)"
+"Sí, es pot s'ha ... Tot el que has de fer és <strong class=\"purple-text\">arrossegar "
+"al botó de sota</strong> al seu <strong class=\"purple-text\">marcador "
+"bar</strong> així:"
 
-#: index.php:50
-msgid "Parla catal&#133;?"
-msgstr "Seak english?"
+#: index.php:191
+msgid "There's More!"
+msgstr "Hi ha més!"
+
+#: index.php:213
+msgid ""
+"Below is a collection of <span class=\"blue-text\">ugly dogs</span>, why not "
+"change that... Why not <span class=\"blue-text\">give</span><strong>cat</"
+"strong>?"
+msgstr ""
+"A continuació es mostra una col · lecció de<span class=\"blue-text\">gossos lletjos</span>, ¿per què no "
+"canviar això ... Per què no <span class=\"blue-text\">give</span><strong>cat</"
+"strong>?"
+
+#: index.php:238
+msgid "Fancy another go?"
+msgstr "Fantasia altra oportunitat?"
+
+#: index.php:238
+msgid "Reset Dogs!"
+msgstr "Restablir els gossos!"
+
+#: index.php:247
+msgid "Share the<strong>awesome</strong>!"
+msgstr "Comparteix la<strong>impressionant</strong>!"
+
+#: index.php:249
+msgid "Pretty epic right? Why not tell your friends and share the love?"
+msgstr "Dret Pretty èpica? Per què no dir-li als seus amics i compartir l'amor?"
+
+#: index.php:254
+msgid "Share on Facebook!"
+msgstr "Share on Facebook!"
+
+#: index.php:256
+msgid "Tweet about give<strong>cat</strong>!"
+msgstr "Tweet sobre give<strong>cat</strong>!"
+
+#: index.php:260
+msgid ""
+"If you're a geek then you can fork us on GitHub... give<strong>cat</strong> "
+"is all open source!"
+msgstr "Si ets un geek, envieu una forquilla a GitHub... give<strong>cat</strong> "
+"és tot de codi obert!"
+
+#: index.php:288
+msgid ""
+"Copyright &copy;2013 <a href=\"http://www.mattrayner.co.uk/\" target=\"_blank"
+"\">Matt Rayner</a>. Credit to <a href=\"http://heygirl.io\">Hey Girl</a> for "
+"the inspiration."
+msgstr ""
+"Copyright &copy;2013 <a href=\"http://www.mattrayner.co.uk/\" target=\"_blank"
+"\">Matt Rayner</a>. El crèdit al <a href=\"http://heygirl.io\">Hey Girl</a> per a "
+"la inspiració"
+
+#: index.php:310
+msgid ""
+"<h4>Coded with love</h4>\n"
+"          <p>Coded in my spare time with love, permission from my girlfrend "
+"and <a href=\"http://brackets.io\" target=\"_blank\">Brackets</a>.</p>\n"
+"          <p>Created under the <a href=\"http://en.wikipedia.org/wiki/"
+"MIT_License\" target=\"_blank\">MIT license</a>. <a href=\"http://github.com/"
+"mattrayner/Give.Cat/\" target=\"_blank\">Fork me on GitHub</a>.</p>"
+msgstr ""
+"<h4>Estarà amb amor</h4>\n"
+"          <p>COded en el meu temps lliure amb l'amor, el permís de la meva girlfrend "
+"i <a href=\"http://brackets.io\" target=\"_blank\">Brackets</a>.</p>\n"
+"          <p>Creat sota la <a href=\"http://en.wikipedia.org/wiki/"
+"MIT_License\" target=\"_blank\">MIT llicència</a>. <a href=\"http://github.com/"
+"mattrayner/Give.Cat/\" target=\"_blank\">Em forquilla a GitHub</a>.</p>"
+
+#: index.php:323
+msgid "What's this?"
+msgstr "Què és això?"
+
+#: index.php:326
+msgid ""
+"So, Give Cat is allways updating, changing and getting better... Infact, the "
+"latest public version of Give Cat was updated on <strong>"
+msgstr ""
+"Així, Donar gat sempre es troba l'actualització, canviant i cada vegada millor ... De fet, "
+"l'última versió pública de Give Cat es va actualitzar el <strong>"
+
+#: index.php:327
+msgid ""
+"All you need to do is drag the button below to your bookmark bar... Simples!"
+msgstr ""
+"Tot el que has de fer és arrossegar el botó de baix a la barra de marcadors ... Simples!"
+
+#: index.php:335
+msgid "Changes:"
+msgstr "Canvis:"
+
+#: index.php:336
+msgid "Want to know exactly what's been updated? Check out the changes below!"
+msgstr "Vol saber exactament el que s'ha actualitzat? Fes una ullada als canvis de sota!"

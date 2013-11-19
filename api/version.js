@@ -1,1 +1,1 @@
-checkVersion({"version": "0.8", "poke": "true"});
+checkVersion({"version": "0.7"});
