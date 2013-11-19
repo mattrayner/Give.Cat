@@ -19,8 +19,8 @@ textdomain($domain);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="News websites getting you down? Can't face another look at 9gag? Or are you just fed up of looking at your friend's ugly faces? - You've come to the right place! Give Cat replaces all of the images on a website with adorable cats - brightening your day and improving your life. Need I say more?">
+    <meta name="author" content="Matt Rayner <http://www.mattrayner.co.uk/>">
 
     <title><?php echo gettext("Give Cat!"); ?></title>
 
@@ -40,7 +40,10 @@ textdomain($domain);
     <meta name="msapplication-TileColor" content="#00adef">
 
 	  <!-- Facebook Image -->
-	  <meta property="og:image" content="http://give.cat/assets/img/gc-facebook.jpg"/>
+		<meta property="og:url" content="http://give.cat/"/>
+		<meta property="og:title" content="Give Cat - Making the internet a squishier place!"/>
+		<meta property="og:description" content="News websites getting you down? Can't face another look at 9gag? Or are you just fed up of looking at your friend's ugly faces? - You've come to the right place! Give Cat replaces all of the images on a website with adorable cats - brightening your day and improving your life. Need I say more?"/>
+	  <meta property="og:image" content="http://give.cat/assets/img/gc-facebook-update.jpg"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -253,7 +256,7 @@ textdomain($domain);
             <div class="sharer-container pull-center">
               <a href="https://www.facebook.com/sharer.php?s=100&p%5Burl%5D=http%3A%2F%2Fgive.cat%2F&p%5Bimages%5D%5B0%5D=http%3A%2F%2Fgive.cat%2Fassets%2Fimg%2Fgc-facebook.jpg&p%5Btitle%5D=Give%20Cat!%20-%20Making%20the%20internet%20a%20squishier%20place!%20%23GiveCat" target="_blank" class="ir sharer sharer-fb pull-left"><?php echo gettext("Share on Facebook!"); ?></a>
               
-							<a href="http://twitter.com/home?status=Make%20the%20internet%20a%20squishier%20place!%20http://give.cat/%20%23givecat" target="_blank" class="ir sharer sharer-twitter pull-right"><?php echo gettext("Tweet about give<strong>cat</strong>!"); ?></a>
+							<a href="http://twitter.com/home?status=Make%20the%20internet%20a%20squishier%20place!%20http://give.cat/%20%40GiveCatApp%20%23givecat" target="_blank" class="ir sharer sharer-twitter pull-right"><?php echo gettext("Tweet about give<strong>cat</strong>!"); ?></a>
             </div>
           </div>
           
