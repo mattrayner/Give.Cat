@@ -115,7 +115,7 @@ textdomain($domain);
             
 						<!-- Cycler - show how GC works on select websites -->
 						<div class="row">
-              <div class="row cycle-container pull-center">
+              <div class="row cycle-container pull-center-important">
                 <div class="cycle1 ir">BBC</div>
                 <div class="cycle2 ir">BBC - Cats</div>
                 <div class="cycle3 ir">Facebook</div>
@@ -168,7 +168,7 @@ textdomain($domain);
     </div>
 		
 		<!-- Main Call To Action page -->
-    <div class="row page3">
+    <div class="row page3 padding-bottom">
       <div class="container">
         <div class="col-md-6">
           <h2 class="white-text text-center text-shadow"><?php echo gettext("I can<strong>has</strong>?"); ?></h2>
@@ -244,9 +244,9 @@ textdomain($domain);
     </div>
     
 		<!-- Share page -->
-		<div class="row page5 text-shadow text-center white-text">
+		<div class="row page5 text-shadow text-center white-text padding-bottom">
       <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-8 col-xs-9 col-xxs">
           <h2><?php echo gettext("Share the<strong>awesome</strong>!"); ?></h2>
           
 					<div class="gc-lead"><?php echo gettext("Pretty epic right? Why not tell your friends and share the love?"); ?></div>
@@ -283,12 +283,12 @@ textdomain($domain);
      
 		<!-- Footer Page -->
 		<div class="row page6">
-      <div clas="container">
+      <div class="container">
 				<!-- Copyright Notice -->
         <div class="col-sm-4 padme margin-top margin-bottom">
-          <a href="http://give.cat/" class="gc-logo-inverse pull-center ir"><?php echo gettext("give<strong>cat</strong>"); ?></a>
+          <a href="http://give.cat/" class="gc-logo-inverse ir"><?php echo gettext("give<strong>cat</strong>"); ?></a>
           
-					<p class="text-center copy-notice"><?php echo gettext('Copyright &copy;2013 <a href="http://www.mattrayner.co.uk/" target="_blank">Matt Rayner</a>. Credit to <a href="http://heygirl.io">Hey Girl</a> for the inspiration.'); ?></p>
+					<p class="copy-notice padding-top"><?php echo gettext('Copyright &copy;2013 <a href="http://www.mattrayner.co.uk/" target="_blank">Matt Rayner</a>. Credit to <a href="http://heygirl.io">Hey Girl</a> for the inspiration.'); ?></p>
         </div>
         
 				<!-- Catalan Transtaion Block -->
@@ -368,7 +368,9 @@ textdomain($domain);
       	$(".cycle-container").cycle();
         
       	$(".clicker").on("click", function(e){
-        	$(this).toggleClass("clicked"); 
+        	$(this).toggleClass("clicked");
+            
+            $(window).scroll();
       	});
 
       	function animateArrows() {
