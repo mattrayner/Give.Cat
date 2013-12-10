@@ -39,8 +39,8 @@ The loader includes the basic bones of the bookmarklet - it's first job is to tr
 ##### 2. The extender
 The extender adds additional cat images from the server, does a version check and allows for functionality that would cause the bookmarklet to be too large to be used in most browsers. This load also means we can change a single file on the server and all of the users will be instantly updated to use the new bookmarklet stuff.
 
-### 3. The CMS (this is a side note)
-Give Cat has a small CMS that allows for new cat images to be uploaded to the server. It may also be the case that future bookmarklets can be updated directly for the CMS - this is not a definite though.
+##### 3. The CMS (this is a side note)
+Give Cat has a small CMS that allows for new cat images to be uploaded to the server. It may also be the case that future bookmarklets can be updated directly from the CMS - this is not a definite though.
 
 -------------
 
@@ -53,6 +53,5 @@ The best way to get involved is just to pull a fork and make some changes! I'm u
 I've got to give credit for the original idea to <a href="http://heygirl.io">HeyGirl.io</a>, I took this original Ryan Gosling idea and morphed it into cats... Then I went a bit overboard and it became what you see here!
 
 I use a couple of libraries in here too:
-* <a href="https://github.com/serbanghita/Mobile-Detect/">Mobile Detect - PHP Library</a>
 * <a href="https://gist.github.com/miguelxt/908143">SimpleImage - PHP Library</a>
 * <a href="http://getbootstrap.com/">Twitter Bootstrap</a>
