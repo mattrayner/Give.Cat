@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9605071-4baf-4bc5-961f-2610bd02bdb4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/100.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/101.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/102.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/103.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/104.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/105.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/106.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/107.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/108.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/109.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/110.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/111.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/112.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/113.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/114.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/115.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/116.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/117.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/118.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/119.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/121.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/122.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/123.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/124.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/126.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/127.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/129.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/130.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/131.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/132.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/133.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/134.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/135.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/136.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/137.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/138.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/139.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/140.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/141.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/142.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/143.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/144.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/145.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/147.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/148.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/149.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/150.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/151.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/152.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/153.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/154.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/155.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/156.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/157.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/158.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/159.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/160.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/161.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/162.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/163.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/164.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/165.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/166.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/167.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/168.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/169.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/170.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/171.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/172.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/173.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/174.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/175.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/176.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/177.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/178.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/179.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/180.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/181.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/182.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/183.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/184.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/185.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/186.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/187.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/188.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/189.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/51.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/52.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/53.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/54.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/55.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/56.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/57.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/58.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/59.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/60.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/61.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/62.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/63.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/64.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/65.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/66.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/67.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/68.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/69.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/70.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/71.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/72.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/73.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/74.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/75.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/76.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/77.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/78.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/79.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/80.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/81.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/82.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/83.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/84.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/85.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/86.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/87.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/88.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/89.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/91.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/92.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/93.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/94.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/95.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/96.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/97.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/98.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/99.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/fail.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/blueCat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/bookmarkbar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/catprogressbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/catprogressspinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/1/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/2/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/3/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/4/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/5/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/9gag-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/9gag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/bbc-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/bbc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/facebook-cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/cycles/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/dogs/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/drag-action.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/1-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/2-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/3-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/4-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/5-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/6-clicked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/examples/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-114@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-57@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-72@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-cat-circle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-facebook-update.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-git-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-info-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/gc-info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-clicker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-inverse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-large.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-media-m.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-media-s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-media-xs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-media-xxs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo-sm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/give-cat-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/instructions-desktop-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/page1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/page2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/page3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/page5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/share-fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/share-github.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/img/share-twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/scripts/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/GiveCatJS/givecat.extended.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/GiveCatJS/givecat.extended.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/GiveCatJS/givecat.loader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/GiveCatJS/givecat.loader.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/api/img/thumb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/css/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/js/jquery.cycle.lite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/js/jquery.cycle2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/assets/scripts/iepngfix.htc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s3/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="334" column="41" lean-forward="false" selection-start-line="334" selection-start-column="41" selection-end-line="334" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#29664#29670#0" expanded="true" />
+                <element signature="e#31309#31316#1" expanded="true" />
+                <marker date="1501238563946" expanded="true" signature="4756:4912" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="4936:5593" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="6404:7840" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="6448:6638" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="14522:14698" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="14722:15399" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="16210:17666" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="16254:16464" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="25824:26004" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="26028:26709" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="27520:28980" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="27564:27778" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="33195:33399" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="33423:34128" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="34939:36423" ph="{...}" />
+                <marker date="1501238563946" expanded="true" signature="34983:35221" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="givecat.loader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s3/GiveCatJS/givecat.loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.cycle.lite.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s3/assets/js/jquery.cycle.lite.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s3/api/version.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cats.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/s3/api/cats.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2372" lean-forward="false" selection-start-line="0" selection-start-column="2372" selection-end-line="0" selection-end-column="2372" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cats.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/cache/cats.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/cache/cats.json" />
+        <option value="$PROJECT_DIR$/s3/api/cats.php" />
+        <option value="$PROJECT_DIR$/s3/ca" />
+        <option value="$PROJECT_DIR$/s3/index.html" />
+        <option value="$PROJECT_DIR$/s3/api/cats.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="1058" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="s3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="s3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Give.Cat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/s3/api" />
+      <recent name="$PROJECT_DIR$/s3" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9605071-4baf-4bc5-961f-2610bd02bdb4" name="Default" comment="" />
+      <created>1501236132023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1501236132023</updated>
+      <workItem from="1501236136242" duration="85000" />
+      <workItem from="1501236235528" duration="1789000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1874000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1920" height="1058" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1864139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/GiveCatJS/givecat.loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/assets/js/jquery.cycle.lite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/cache/cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/api/version.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/ca">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5464">
+          <caret line="547" column="55" lean-forward="false" selection-start-line="547" selection-start-column="55" selection-end-line="547" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="334" column="41" lean-forward="false" selection-start-line="334" selection-start-column="41" selection-end-line="334" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29664#29670#0" expanded="true" />
+            <element signature="e#31309#31316#1" expanded="true" />
+            <marker date="1501238563946" expanded="true" signature="4756:4912" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="4936:5593" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="6404:7840" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="6448:6638" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="14522:14698" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="14722:15399" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="16210:17666" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="16254:16464" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="25824:26004" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="26028:26709" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="27520:28980" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="27564:27778" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="33195:33399" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="33423:34128" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="34939:36423" ph="{...}" />
+            <marker date="1501238563946" expanded="true" signature="34983:35221" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/api/cats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2261" lean-forward="false" selection-start-line="0" selection-start-column="2261" selection-end-line="0" selection-end-column="2261" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3/api/cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2372" lean-forward="false" selection-start-line="0" selection-start-column="2372" selection-end-line="0" selection-end-column="2372" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

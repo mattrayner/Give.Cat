@@ -1,4 +1,7 @@
 <img src="http://give.cat/assets/img/give-cat-logo.png">
+
+> NOTE: We have flattened the dynamic parts of this site so that it can be easily hosted on S3. The flattened files live within the s3 directory.
+
 > "Making the internet a squishier place!"
 
 <i>Give Cat is an attempt to bring happiness and joy to everyday life... One cat at a time.</i>
